@@ -1,0 +1,77 @@
+{{>header}}
+
+<body>
+  {{>navbar}}
+
+  <!-- Main Page -->
+  <div class="container-fluid mt-5 p-5 bg-light">
+    <div id="timeline-dates" class="navbar navbar-light bg-light px-3">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#pre1900">Pre 1900</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Second</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+    <h1>{{title}}</h1>
+    <div class="page-container">
+      <p>Browse the history of nursing in Saskatchewan and Alberta by timeline.
+      Pre 1900's 1900's 1910's 1920's 1930's 1940's 1950's 1960's 1970's
+      1980's 1990's 2000's</p>
+    </div>
+  <div id="data-container"></div>
+  </div>
+
+
+<div data-bs-spy="scroll" data-bs-target="#timeline-dates" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <h4 id="pre1900">First heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading2">Second heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading3">Third heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading4">Fourth heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading5">Fifth heading</h4>
+  <p>...</p>
+</div>
+
+
+{{!-- <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div> --}}
+
+
+  {{>script}}
+  {{>footer}}

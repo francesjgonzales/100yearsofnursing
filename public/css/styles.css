@@ -1,0 +1,88 @@
+/* Global CSS */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1a2026;
+}
+
+h1,
+h2,
+p,
+li,
+ul {
+  color: #1a2026;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:nth-child(-n + 2) {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: inline-block;
+  }
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* navbar */
+  .navbar {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  } */
+}
+
+/* 
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

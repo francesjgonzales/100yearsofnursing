@@ -12,7 +12,7 @@ body {
 }
 
 h1,
-h2,
+h2, h3, h4, h5,
 p,
 li,
 ul {
@@ -52,23 +52,11 @@ ul {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-
-  /* .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  } */
 }
 
-/* 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-transform: translateX(0);
-} */
+.card {
+  background-color: lightblue;
+}
 
 .dropdown {
   position: relative;

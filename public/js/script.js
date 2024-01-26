@@ -1,59 +1,89 @@
 // Carousel
-let items = document.querySelectorAll('.carousel .carousel-item')
+let items = document.querySelectorAll(".carousel .carousel-item");
 
 items.forEach((el) => {
-  const minPerSlide = 1
-  let next = el.nextElementSibling
+  const minPerSlide = 1;
+  let next = el.nextElementSibling;
   for (var i = 1; i < minPerSlide; i++) {
     if (!next) {
       // wrap carousel by using first child
-      next = items[0]
+      next = items[0];
     }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
   }
-})
+});
 
+//testing json for article value
+var str = "This is the first line\n\n\nand *this* is the second line";
+console.log(str.replace(/_/g, "<i>"));
 
 // fetch api
+const api = "http://localhost:3000/alberta";
 
-/* console.log(API);
- */
-// Make a request for a user with a given ID
-/* axios.get('http://localhost:3000/alberta')
-  .then(function (response) {
-    // handle success
-    let allData = response.data.alberta
+axios.get(api).then(function (response) {
+  // handle success
+  const allData = response.data;
+  console.log(allData);
+  // const dataStringify = JSON.stringify(allData, null, 2)
+  // console.log('this is stringify' + dataStringify)
+
+  const albertaData = allData
+    .map((abData) => {
+      // console.log(abData)
+      return `<h1 id=${abData.id}>${abData.title}</h1>
+      <p>${abData.article}</p>`;
+    })
+    .join("");
+
+  document.querySelector(".data-container").innerHTML = albertaData.replace(
+    /\n/g,
+    "<br>"
+  ); //used replace to add an extra line
 
 
-    document.getElementById('data-container').innerHTML = `<div>${allData}</div>
-    <p>${allData.article}</p>`
-    console.log(allData);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  }) */
 
-
-
-async function fetchData() {
-  try {
-    const response = await axios.get('http://localhost:3000/alberta')
-    const allData = response.data
-
-    const dataList = allData.map(data => {
-      return `<div id=${data.id}>
-      <h1>${data.title}</h1>
-      <p>${data.article}</p>
-      </div>`
-    }).join('')
-
-    document.getElementById('data-container').innerHTML = dataList.replace(/\n\n/g, '<br><br>')
-
-  } catch (error) {
-    console.error('Error:', error);
+// START FILTER ARTICLES
+// 1. Filter search for Pre 1900's articles
+const filterPre1900 = allData.filter(function (pre1900) {
+  if (pre1900.year === "Pre 1900's") {
+    return true;
   }
-}
-fetchData()
+});
+
+// 2. Show mapped data in browser
+const pre1900 = filterPre1900
+  .map((data) => {
+    return `<div class="card" id="${data.id}">
+          <h5>${data.title}</h5>
+          </div>`;
+  })
+  .join("");
+
+document.getElementById("searchByPre1900").innerHTML = pre1900;
+
+
+});
+// END FILTER ARTICLES
+
+
+//Handling error
+axios.get(api).catch(function (error) {
+  if (error.response) {
+    // The request was made and the server responded with a status code
+    // that falls out of the range of 2xx
+    console.log("Data Error Message:", error.response.data);
+    console.log("Status Error Message:", error.response.status);
+    console.log("Headers Error Message:", error.response.headers);
+  } else if (error.request) {
+    // The request was made but no response was received
+    // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+    // http.ClientRequest in node.js
+    console.log(error.request);
+  } else {
+    // Something happened in setting up the request that triggered an Error
+    console.log("Request Error Message:", error.message);
+  }
+  console.log("Config Error Message: (Check Json-server):", error.config);
+});

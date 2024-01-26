@@ -7,5 +7,5 @@
 - favicon - https://www.npmjs.com/package/serve-favicon
 - create json server - https://my-json-server.typicode.com/
   - https://my-json-server.typicode.com/typicode/demo
-    `npm run db` - to start json-server
-    https://www.youtube.com/watch?v=NM4gB8J1uF4
+https://onlinetexttools.com/json-stringify-text
+https://hardiquedasore.medium.com/how-to-use-a-line-break-in-json-3c27d7ee8fc6#:~:text=As%20we%20can't%20add,code%20in%20the%20HTML%20file.

@@ -1,12 +1,12 @@
 {
   "name": "100yearsnursing_express",
   "version": "1.0.0",
-  "description": "- Used (reload)[https://github.com/alallier/reload-sample-app/blob/master/server.js] for reloading server and browser during development stage   `npm install [-g] [--save-dev] reload` - favicon - https://www.npmjs.com/package/serve-favicon - create json server - https://my-json-server.typicode.com/   - https://my-json-server.typicode.com/typicode/demo     `npm run db` - to start json-server",
+  "description": "- Used (reload)[https://github.com/alallier/reload-sample-app/blob/master/server.js] for reloading server and browser during development stage   `npm install [-g] [--save-dev] reload` - favicon - https://www.npmjs.com/package/serve-favicon - create json server - https://my-json-server.typicode.com/   - https://my-json-server.typicode.com/typicode/demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/app.js -e html,hs,hbs",
-    "db": "json-server --watch ./database/db.json"
+    "db": "json-server ./database/db.json"
   },
   "keywords": [],
   "author": "",

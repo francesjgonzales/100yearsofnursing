@@ -1,0 +1,58 @@
+{{>header}}
+
+<body>
+  {{>navbar}}
+
+  <!-- Main Page -->
+  <div class="container-fluid mt-5 p-5 bg-light">
+
+    <h1>{{title}}</h1>
+    <div class="page-container">
+      <h4>Browse the history of nursing in Saskatchewan and Alberta by timeline.</h4>
+
+      <a class="btn btn-primary" href="#" role="button">Pre 1900's</a>
+<button
+          class="infoCollapse btn btn-primary"
+          type="button"
+          onClick="toggleFunction(this.name)"
+          name="searchByPre1900"
+          id="noble"
+          style="font-size: 1.8rem"
+        >
+          Pre 1900's
+        </button>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            {{!-- Pre 1900 articles data are shown --}}
+            <div class="flexbox-container" id="searchByPre1900">
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-center" style="height: 100%;">
+              <div class="vr"></div>
+            </div>
+          </div>
+          <div class="col">
+            1900's
+          </div>
+        </div>
+      </div>
+    </div>
+    1910's 1920's 1930's 1940's 1950's 1960's 1970's
+    1980's 1990's 2000's
+
+    {{!-- Where db.json content are shown --}}
+    <div class="data-container"></div>
+  </div>
+
+
+
+  </div>
+
+
+
+  {{>script}}
+  {{>footer}}

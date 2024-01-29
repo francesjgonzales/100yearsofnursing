@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/app.js -e html,hs,hbs",
-    "db": "json-server ./database/db.json",
-    "build": "echo 'No build necessary for Express.js with Handlebars'"
+    "db": "json-server ./database/db.json"
   },
   "keywords": [],
   "author": "",

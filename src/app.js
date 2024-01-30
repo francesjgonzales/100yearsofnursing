@@ -4,7 +4,6 @@ const hbs = require('hbs')
 const reload = require('reload')
 const http = require('http') //reload
 const timeline = require('../routes/timeline'); //define routes path
-const { MongoClient } = require('mongodb'); //connects to MongoDB
 
 const app = express()
 

@@ -18,8 +18,8 @@
     "hbs": "^4.2.0",
     "hbs-helpers": "^1.0.3",
     "json-server": "^1.0.0-alpha.22",
+    "mongodb": "^6.3.0",
     "nodemon": "^3.0.3",
     "reload": "^3.2.1"
-  },
-  "devDependencies": {}
+  }
 }

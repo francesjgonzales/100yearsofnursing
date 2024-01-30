@@ -80,41 +80,6 @@ app.get('/credit', (req, res) => {
 }) */
 
 
-
-app.post('/create', async (req, res) => {
-    try {
-        const db = client.db('Project 0');
-        const collection = db.collection('Cluster0');
-
-        const result = await collection.insertOne(req.body);
-        res.json({ message: 'Document inserted successfully', data: result.ops });
-    } catch (error) {
-        console.error('Error inserting document:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
-    }
-});
-
-
-//connect to MongoDB
-const uri = DB_URI; // MongoDB connection URI
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-async function connectToMongoDB() {
-    try {
-        await client.connect();
-        console.log('Connected to MongoDB');
-    } catch (error) {
-        console.error('Error connecting to MongoDB:', error);
-    }
-}
-
-connectToMongoDB();
-
-
-
-
-
-
 //Reload start
 var server = http.createServer(app)
 

@@ -2,8 +2,9 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const reload = require('reload')
-const http = require('http') //reload
+// const http = require('http') //reload
 const timeline = require('../routes/timeline'); //define routes path
+const cors = require('cors');
 
 const app = express()
 
@@ -16,6 +17,10 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 //Set up reload 
 app.set('port', process.env.PORT || 4000)
+
+// Set up ORS middleware
+app.use(cors());
+
 
 // Set up template engine called HBShandlebars for Express - hbs
 app.set('view engine', 'hbs');
@@ -74,22 +79,22 @@ app.get('/credit', (req, res) => {
 })
 
 //start up server
-/* app.listen(3000, () => {
+app.listen(3000, () => {
     console.log('Server up in port 3000.')
-}) */
+}) 
 
 
-//Reload start
-var server = http.createServer(app)
+// //Reload start
+// var server = http.createServer(app)
 
-// Reload code here
-reload(app).then(function (reloadReturned) {
-    // reloadReturned is documented in the returns API in the README
+// // Reload code here
+// reload(app).then(function (reloadReturned) {
+//     // reloadReturned is documented in the returns API in the README
 
-    // Reload started, start web server
-    server.listen(app.get('port'), function () {
-        console.log('Web server listening on port ' + app.get('port'))
-    })
-}).catch(function (err) {
-    console.error('Reload could not start, could not start app.js', err)
-})
+//     // Reload started, start web server
+//     server.listen(app.get('port'), function () {
+//         console.log('Web server listening on port ' + app.get('port'))
+//     })
+// }).catch(function (err) {
+//     console.error('Reload could not start, could not start app.js', err)
+// })

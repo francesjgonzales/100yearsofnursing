@@ -30,17 +30,14 @@ hbs.registerPartials(partialsPath)
 // Set up static directory
 app.use(express.static(publicDirectoryPath))
 
-app.use('/timeline', timeline)
-
-// add hbs helper for reading json file
-/* hbs.registerHelper("with", function (context, options) {
-    return options.fn(context);
-}); */
 
 // Set up route handlers
 app.get('/', (req, res) => {
     res.render('index')
 })
+
+// Set up routes
+app.use('/timeline', timeline)
 
 /* app.get('/timeline', (req, res) => {
     res.render('timeline', {
@@ -48,11 +45,11 @@ app.get('/', (req, res) => {
     })
 }) */
 
-app.get('/timeline/pre1900', (req, res) => {
-    res.render('pre1900', {
-        layout: "pre1900"
-    })
-})
+// app.get('/timeline/pre1900', (req, res) => {
+//     res.render('pre1900', {
+//         layout: "pre1900"
+//     })
+// })
 
 app.get('/themes', (req, res) => {
     res.render('themes', {
@@ -79,8 +76,8 @@ app.get('/credit', (req, res) => {
 })
 
 //start up server
-app.listen(3000, () => {
-    console.log('Server up in port 3000.')
+app.listen(4000, () => {
+    console.log('Server up in port 4000.')
 }) 
 
 

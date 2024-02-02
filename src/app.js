@@ -2,9 +2,10 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const reload = require('reload')
-// const http = require('http') //reload
+const http = require('http') //reload
 const timeline = require('../routes/timeline'); //define routes path
 const cors = require('cors');
+const favicon = require('serve-favicon')
 
 const app = express()
 
@@ -12,8 +13,8 @@ const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
 const templatesPath = path.join(__dirname, '../templates')
 const indexPathFile = path.join(__dirname, '../templates/views')
-
 const partialsPath = path.join(__dirname, '../templates/partials')
+app.use(favicon(path.join(__dirname, '../public/favicon.ico')))
 
 //Set up reload 
 app.set('port', process.env.PORT || 4000)
@@ -76,22 +77,22 @@ app.get('/credit', (req, res) => {
 })
 
 //start up server
-app.listen(4000, () => {
-    console.log('Server up in port 4000.')
-}) 
+// app.listen(4000, () => {
+//     console.log('Server up in port 4000.')
+// }) 
 
 
 // //Reload start
-// var server = http.createServer(app)
+var server = http.createServer(app)
 
-// // Reload code here
-// reload(app).then(function (reloadReturned) {
-//     // reloadReturned is documented in the returns API in the README
+// Reload code here
+reload(app).then(function (reloadReturned) {
+    // reloadReturned is documented in the returns API in the README
 
-//     // Reload started, start web server
-//     server.listen(app.get('port'), function () {
-//         console.log('Web server listening on port ' + app.get('port'))
-//     })
-// }).catch(function (err) {
-//     console.error('Reload could not start, could not start app.js', err)
-// })
+    // Reload started, start web server
+    server.listen(app.get('port'), function () {
+        console.log('Web server listening on port ' + app.get('port'))
+    })
+}).catch(function (err) {
+    console.error('Reload could not start, could not start app.js', err)
+})

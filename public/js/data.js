@@ -6,6 +6,7 @@ axios.get(api).then(function (response) {
   // handle success
   const allData = response.data;
   console.log(allData);
+
   // const dataStringify = JSON.stringify(allData, null, 2)
   // console.log('this is stringify' + dataStringify)
 
@@ -21,13 +22,23 @@ axios.get(api).then(function (response) {
     "<br>"
   ); //used replace to add an extra line where it formats json properly
 
-  const filterPre1900 = allData.filter((pre1900) => {
+
+  let filterPre1900 = allData.filter((pre1900) => {
     if (pre1900.year === "Pre 1900's") {
       return true;
     }
   })
-  console.log(filterPre1900)
 
+  const test = JSON.stringify(filterPre1900)
+  const x = JSON.parse(test)
+  document.querySelector("#pre1900article").innerHTML = test.replace(
+    /\n/g,
+    "<br>"
+  ); 
+
+  console.log(x)
+
+  
 }); //end AXIOS
 
 

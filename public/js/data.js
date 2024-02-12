@@ -23,59 +23,43 @@ axios.get(api).then(function (response) {
   ); //used replace to add an extra line where it formats json properly
 
 
+  // START FILTER ARTICLES
   let filterPre1900 = allData.filter((pre1900) => {
     if (pre1900.year === "Pre 1900's") {
       return true;
     }
+  });
+
+  //Show Filtered Articles in a card with truncated text
+  let str = filterPre1900
+    .map((stringpre1900) => {
+      return `<div class="card bg-light text-black" style="width: 18rem;">
+  <div class="card-body" id=${stringpre1900.id}>
+    <h5 class="card-title">${stringpre1900.title}</h5>
+    <h6 class="card-subtitle mb-2">${stringpre1900.year}</h6>
+    <p class="card-text" id="text-truncated">${stringpre1900.article}</p>
+    <a href="#" class="card-link">Read more</a>
+  </div>
+</div>`;
+    })
+    .join("");
+  const a = document.querySelector("#pre1900article").innerHTML = str
+  console.log(a);
+
+  //Show full article
+
+  let fullPre1900Article = filterPre1900.map((fullArticle) => {
+    return `<p>${fullArticle.article}`
   })
 
-  const test = JSON.stringify(filterPre1900)
-  const x = JSON.parse(test)
-  document.querySelector("#pre1900article").innerHTML = test.replace(
+  document.querySelector("#pre1900").innerHTML = fullPre1900Article.replace(
     /\n/g,
     "<br>"
-  ); 
+  );
+  console.log(b)
+  // END FILTER ARTICLES
 
-  console.log(x)
-
-  
 }); //end AXIOS
-
-
-function showData() {
-  const t = document.getElementById("pre1900article");
-
-  t.innerHTML = '';
-  const thisData = allData.map((data) => {
-    return `<div id="${data.id}">
-    <h5>${data.title}</h5>
-    </div>`
-  }).join("");
-  // 2. Show mapped data in browser
-  // const pre1900 = filterPre1900.map((data) => {
-  //     return `<div id="${data.id}">
-  //         <h5>${data.title}</h5>
-  //         </div>`;
-  //   })
-  //   .join("");
-  // });
-  // console.log(pre1900)
-}
-
-
-// START FILTER ARTICLES
-// 1. Filter search for Pre 1900's articles
-// const filterPre1900 = allData.filter(function (pre1900) {
-//   if (pre1900.year === "Pre 1900's") {
-//     console.log(filterPre1900)
-//     return true;
-//   }
-// });
-
-
-
-
-// END FILTER ARTICLES
 
 
 //Handling error

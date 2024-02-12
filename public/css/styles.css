@@ -22,7 +22,6 @@ ul {
 } */
 /* END font styling */
 
-
 /* START Main container */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +31,6 @@ body {
   --bs-gutter-x: 0rem !important;
 }
 /* END Main container */
-
 
 /* START navbar */
 .bg-body-tertiary {
@@ -58,7 +56,6 @@ body {
 }
 /* END navbar */
 
-
 /* START carousel */
 .carousel-bg {
   background-color: #1a2026;
@@ -83,7 +80,6 @@ body {
   );
 }
 /* END carousel */
-
 
 /* START All media queries */
 @media (max-width: 767px) {
@@ -122,9 +118,16 @@ body {
   /* END media queries */
 }
 
-
 /* START article */
 #about-nursing {
   background-color: #edf5e0;
+}
+
+#text-truncated {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
 }
 /* END article */

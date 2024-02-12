@@ -1,4 +1,4 @@
-// Carousel
+// Carousel Animation in main page
 let items = document.querySelectorAll(".carousel .carousel-item");
 
 items.forEach((el) => {

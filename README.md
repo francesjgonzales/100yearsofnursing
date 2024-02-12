@@ -1,7 +1,11 @@
 # 100yearsofnursing
 
+## To work in local
+
+1. Install all dependencies `npm init` then `npm install`
 
 ## Dependencies
+
 - (hbs)[https://www.npmjs.com/package/hbs] for creating template
 - (express js)[https://expressjs.com/] node js framework that creates endpoints for multiple pages
 - Used (reload)[https://github.com/alallier/reload-sample-app/blob/master/server.js] for reloading server and browser during development stage
@@ -14,10 +18,12 @@
 - (favicon for express js)[https://www.npmjs.com/package/serve-favicon]
 
 ## Json-server database
+
 - Before deployment, add json-server in package-json to connect to local database db.json
-`"scripts": {
+  `"scripts": {
     "start": "nodemon src/app.js -e html,hs,hbs **&& json-server --watch db.json --port 3000**"
 }`
 
 ## Deployment
+
 - Deployed in Railway using private github repository

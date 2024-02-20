@@ -27,3 +27,7 @@
 ## Deployment
 
 - Deployed in Railway using private github repository
+
+## Axios
+
+[https://blog.logrocket.com/understanding-axios-get-requests/]

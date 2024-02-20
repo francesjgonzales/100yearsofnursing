@@ -25,18 +25,19 @@ ul {
 /* START Main container */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1a2026 !important;
 }
 
-.container-fluid {
+/* .container-fluid {
   --bs-gutter-x: 0rem !important;
-}
+} */
 /* END Main container */
 
 /* START navbar */
-.bg-body-tertiary {
+/* .bg-body-tertiary {
   --bs-bg-opacity: 0 !important;
   background-color: #1a2026 !important;
-}
+} */
 
 .dropdown {
   position: relative;
@@ -123,7 +124,7 @@ body {
   background-color: #edf5e0;
 }
 
-#text-truncated {
+.text-truncated {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;

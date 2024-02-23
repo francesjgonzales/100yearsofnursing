@@ -19,7 +19,7 @@ app.use(favicon(path.join(__dirname, '../public/favicon.ico')))
 //Set up reload 
 app.set('port', process.env.PORT || 4000)
 
-// Set up ORS middleware
+// Set up CORS middleware
 app.use(cors());
 
 

@@ -132,3 +132,11 @@ body {
   text-overflow: ellipsis;
 }
 /* END article */
+.vertical-line {
+  border-left: 2px solid green;
+  height: 1000vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  /* top: 0; */
+}

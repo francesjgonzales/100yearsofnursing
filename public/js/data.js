@@ -10,67 +10,47 @@ axios
   .all(endpoints.map((endpoint) => axios.get(endpoint)))
   .then((allResponses) => {
     allResponses.forEach((response) => {
-      console.log(response.data);
+      response.data
+      // console.log(response.data);
     });
 
-    //Get Alberta json
+    //Get All Data for Alberta and Saskatchewan
     let alberta = allResponses[0].data
-      .map((abData) => {
-        return `<div id="${abData.id}" class="toggleDiv" style="display: none;">${abData.title}</div>`;
-      })
-      .join("");
-
-    //Show Alberta data in browser
-    document.querySelector(".alberta").innerHTML = alberta.replace(
-      /\n/g,
-      "<br>"
-    );
-
-    //Get Saskatchewan json
     let saskatchewan = allResponses[1].data
-      .map((saData) => {
-        return `<div id="${saData.id}" class="toggleDiv" style="display: none;">${saData.title}</div>`;
-      })
-      .join("");
+    let jointData = alberta.concat(saskatchewan) //joint both as one array
 
-    //Show Alberta data in browser
-    document.querySelector(".saskatchewan").innerHTML = saskatchewan.replace(
-      /\n/g,
-      "<br>"
-    );
+    //Create a function to generate modal cards based on dynamic response data
 
-
-    //Filter Pre 1900 articles from Alberta and Saskatchewan arrays
-    let filterPre1900 = allResponses[0].data.filter((pre1900) => {
+    //Filter Pre 1900 articles from joint array
+    let filterPre1900 = jointData.filter((pre1900) => {
       if (pre1900.year === "Pre 1900's") {
         return true;
       }
     });
     console.log(filterPre1900);
 
-    //Show Pre 1900 in browser
-    let pre1900Cards = filterPre1900
-      .map((stringpre1900) => {
+    let filterPre1900Articles = filterPre1900
+      .map((pre1900articles) => {
         return `
         <div class="card bg-light text-black" style="width: 20rem;">
           <div class="card-body">
-            <h5 class="card-title">${stringpre1900.title}</h5>
-            <h6 class="card-subtitle mb-2">${stringpre1900.year}</h6>
-            <p class="text-truncated">${stringpre1900.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${stringpre1900.id}" type="button">Read More</a>
+            <h5 class="card-title">${pre1900articles.title}</h5>
+            <h6 class="card-subtitle mb-2">${pre1900articles.year}</h6>
+            <p class="text-truncated">${pre1900articles.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${pre1900articles.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${stringpre1900.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light text-light" id="${pre1900articles.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">${stringpre1900.title}</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${pre1900articles.title}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${stringpre1900.article}
+                ${pre1900articles.article}
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -80,10 +60,243 @@ axios
         </div>`;
       })
       .join("");
-    document.getElementById("pre1900article").innerHTML = pre1900Cards.replace(
+
+    //Show Pre 1900 array in browser
+    document.querySelector("#preArticle1900").innerHTML = filterPre1900Articles.replace(
       /\n/g,
       "<br>"
     );
+
+    //Filter 1900 articles from joint array
+    let filter1900 = jointData.filter((article1900) => {
+      if (article1900.year === "1900's") {
+        return true;
+      }
+    });
+    console.log(filter1900);
+
+    let filter1900Articles = filter1900
+      .map((articles1900) => {
+        return `
+       <div class="card bg-light text-black" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title">${articles1900.title}</h5>
+            <h6 class="card-subtitle mb-2">${articles1900.year}</h6>
+            <p class="text-truncated">${articles1900.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1900.id}" type="button">Read More</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal bg-light text-light" id="${articles1900.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1900.title}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ${articles1900.article}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      })
+      .join("");
+
+    //Show 1900 array in browser
+    document.getElementById("article1900").innerHTML = filter1900Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1910 articles from joint array
+    let filter1910 = jointData.filter((article1910) => {
+      if (article1910.year === "1910's") {
+        return true;
+      }
+    });
+    console.log(filter1910);
+
+    let filter1910Articles = filter1910
+      .map((articles1910) => {
+        return `
+        <div class="card bg-light text-black" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title">${articles1910.title}</h5>
+            <h6 class="card-subtitle mb-2">${articles1910.year}</h6>
+            <p class="text-truncated">${articles1910.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1910.id}" type="button">Read More</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal bg-light text-light" id="${articles1910.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1910.title}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ${articles1910.article}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      })
+      .join("");
+
+    //Show 1910 array in browser
+    document.getElementById("article1910").innerHTML = filter1910Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1920 articles from joint array
+    let filter1920 = jointData.filter((article1920) => {
+      if (article1920.year === "1920's") {
+        return true;
+      }
+    });
+    console.log(filter1920);
+
+    let filter1920Articles = filter1920
+      .map((articles1920) => {
+        return `
+        <div class="card bg-light text-black" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title">${articles1920.title}</h5>
+            <h6 class="card-subtitle mb-2">${articles1920.year}</h6>
+            <p class="text-truncated">${articles1920.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1920.id}" type="button">Read More</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal bg-light text-light" id="${articles1920.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1920.title}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ${articles1920.article}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      })
+      .join("");
+
+    //Show 1920 array in browser
+    document.getElementById("article1920").innerHTML = filter1920Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1930 articles from joint array
+    let filter1930 = jointData.filter((article1930) => {
+      if (article1930.year === "1930's") {
+        return true;
+      }
+    });
+    console.log(filter1930);
+
+    let filter1930Articles = filter1930
+      .map((articles1930) => {
+        return `
+        <div class="card bg-light text-black" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title">${articles1930.title}</h5>
+            <h6 class="card-subtitle mb-2">${articles1930.year}</h6>
+            <p class="text-truncated">${articles1930.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1930.id}" type="button">Read More</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal bg-light text-light" id="${articles1930.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1930.title}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ${articles1930.article}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      })
+      .join("");
+
+    //Show 1930 array in browser
+    document.getElementById("article1930").innerHTML = filter1930Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+        //Filter 1930 articles from joint array
+        let filter1940 = jointData.filter((article1940) => {
+          if (article1940.year === "1940's") {
+            return true;
+          }
+        });
+        console.log(filter1930);
+    
+        let filter1940Articles = filter1940
+          .map((articles1940) => {
+            return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1940.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1940.year}</h6>
+                <p class="text-truncated">${articles1940.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1940.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1940.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1940.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1940.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+          })
+          .join("");
+    
+        //Show 1930 array in browser
+        document.getElementById("article1940").innerHTML = filter1940Articles.replace(
+          /\n/g,
+          "<br>"
+        );
+
   })
 
 
@@ -109,85 +322,3 @@ axios
     console.log("Config Error Message: (Check Json-server):", error.config);
   });
 // END Axios Response
-
-// START FILTER ARTICLES
-/* let filterPre1900 = response.data.filter((pre1900) => {
-  if (pre1900.year === "Pre 1900's") {
-    return true;
-  }
-});
-console.log(filterPre1900); */
-
-/* axios.get(api).then(function (response) {
-  // handle success
-  let allData = response.data;
-  console.log(allData);
-
-  // const dataStringify = JSON.stringify(allData, null, 2)
-  // console.log('this is stringify' + dataStringify)
-
-  let albertaData = allData
-    .map((abData) => {
-      return `<h1 id=${abData.id}>${abData.title}</h1>
-      <h6 class="mb-2">${abData.year}</h6>
-      <p>${abData.article}</p>`;
-    })
-    .join("");
-
-  document.querySelector(".data-container").innerHTML = albertaData.replace(
-    /\n/g,
-    "<br>"
-  ); //used replace to add an extra line where it formats json properly
-
-  // START FILTER ARTICLES
-  let filterPre1900 = allData.filter((pre1900) => {
-    if (pre1900.year === "Pre 1900's") {
-      return true;
-    }
-  });
-
-  //Show Filtered Articles in a card with truncated text
-  const str = filterPre1900
-    .map((stringpre1900) => {
-      return `<div class="card bg-light text-black" style="width: 18rem;">
-  <div class="card-body" id=${stringpre1900.id}>
-    <h5 class="card-title">${stringpre1900.title}</h5>
-    <h6 class="card-subtitle mb-2">${stringpre1900.year}</h6>
-    <p class="card-text" id="text-truncated">${stringpre1900.article}</p>
-    <a href="#" class="card-link">Read more</a>
-  </div>
-</div>`;
-    })
-    .join("");
-  const a = (document.querySelector("#pre1900article").innerHTML = str);
-  console.log(a);
-
-  //Show full article
-  document.querySelector(".pre1900").innerHTML = str.replace(/\n/g, "<br>");
-  console.log(b);
-  // END FILTER ARTICLES
-});
-
-<div class="card bg-light text-black" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">${stringpre1900.title}</h5>
-            <h6 class="card-subtitle mb-2">${stringpre1900.year}</h6>
-            <p class="card-text" id="text-truncated">${stringpre1900.article}</p>
-            <a href="#${stringpre1900.id}" class="card-link">${stringpre1900.title}</a>
-          </div>
-        </div>
-
-
-*/
-
-
-/*<nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#${stringpre1900.id}" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">${stringpre1900.title}</button>
-  </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane" id="${stringpre1900.id}" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-  <h5>${stringpre1900.title}</h5>
-  <p>${stringpre1900.article}</p></div>
-</div>*/

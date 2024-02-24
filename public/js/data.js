@@ -1,6 +1,6 @@
-// fetch api
-io()
+io() //websocket connection
 
+// fetch api
 const endpoints = [
   "http://localhost:3000/alberta",
   "http://localhost:3000/saskatchewan",

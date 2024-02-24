@@ -7,20 +7,36 @@ const timeline = require('../routes/timeline'); //define routes path
 const cors = require('cors');
 const favicon = require('serve-favicon')
 
-const app = express()
+const socketio = require('socket.io')
 
-// Define Paths for Express config
-const publicDirectoryPath = path.join(__dirname, '../public')
-const templatesPath = path.join(__dirname, '../templates')
-const indexPathFile = path.join(__dirname, '../templates/views')
-const partialsPath = path.join(__dirname, '../templates/partials')
-app.use(favicon(path.join(__dirname, '../public/favicon.ico')))
+
+const app = express()
+const server = http.createServer(app) // //Reload start
+const io = socketio(server)
 
 //Set up reload 
 app.set('port', process.env.PORT || 4000)
 
+// Define Paths for Express config
+const publicDirectoryPath = path.join(__dirname, '../public')
+/* const templatesPath = path.join(__dirname, '../templates') */
+const indexPathFile = path.join(__dirname, '../templates/views')
+const partialsPath = path.join(__dirname, '../templates/partials')
+app.use(favicon(path.join(__dirname, '../public/favicon.ico')))
+
+
+
+// Use PORT provided in environment or default to 3000
+/* const port = process.env.PORT || 4000;
+
+// Listen on `port` and 0.0.0.0
+app.listen(port, "0.0.0.0", function () {
+    console.log('Server up in port 4000.')
+}); */
+
 // Set up CORS middleware
 app.use(cors());
+
 
 
 // Set up template engine called HBShandlebars for Express - hbs
@@ -81,12 +97,13 @@ app.get('/credit', (req, res) => {
 //     console.log('Server up in port 4000.')
 // }) 
 
+io.on('connection', () => {
+    console.log('new websocket connection');
+})
 
-// //Reload start
-var server = http.createServer(app)
 
 // Reload code here
-reload(app).then(function (reloadReturned) {
+reload(app).then(function () {
     // reloadReturned is documented in the returns API in the README
 
     // Reload started, start web server
@@ -96,3 +113,4 @@ reload(app).then(function (reloadReturned) {
 }).catch(function (err) {
     console.error('Reload could not start, could not start app.js', err)
 })
+

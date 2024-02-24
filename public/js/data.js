@@ -1,4 +1,5 @@
 // fetch api
+io()
 
 const endpoints = [
   "http://localhost:3000/alberta",
@@ -251,17 +252,17 @@ axios
       "<br>"
     );
 
-        //Filter 1930 articles from joint array
-        let filter1940 = jointData.filter((article1940) => {
-          if (article1940.year === "1940's") {
-            return true;
-          }
-        });
-        console.log(filter1930);
-    
-        let filter1940Articles = filter1940
-          .map((articles1940) => {
-            return `
+    //Filter 1930 articles from joint array
+    let filter1940 = jointData.filter((article1940) => {
+      if (article1940.year === "1940's") {
+        return true;
+      }
+    });
+    console.log(filter1930);
+
+    let filter1940Articles = filter1940
+      .map((articles1940) => {
+        return `
             <div class="card bg-light text-black" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1940.title}</h5>
@@ -288,14 +289,14 @@ axios
                 </div>
               </div>
             </div>`;
-          })
-          .join("");
-    
-        //Show 1930 array in browser
-        document.getElementById("article1940").innerHTML = filter1940Articles.replace(
-          /\n/g,
-          "<br>"
-        );
+      })
+      .join("");
+
+    //Show 1930 array in browser
+    document.getElementById("article1940").innerHTML = filter1940Articles.replace(
+      /\n/g,
+      "<br>"
+    );
 
   })
 

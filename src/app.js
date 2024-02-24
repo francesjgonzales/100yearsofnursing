@@ -101,7 +101,6 @@ io.on('connection', () => {
     console.log('new websocket connection');
 })
 
-
 // Reload code here
 reload(app).then(function () {
     // reloadReturned is documented in the returns API in the README

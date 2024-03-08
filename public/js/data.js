@@ -252,17 +252,17 @@ axios
       "<br>"
     );
 
-    //Filter 1930 articles from joint array
-    let filter1940 = jointData.filter((article1940) => {
-      if (article1940.year === "1940's") {
-        return true;
-      }
-    });
-    console.log(filter1930);
-
-    let filter1940Articles = filter1940
-      .map((articles1940) => {
-        return `
+        //Filter 1930 articles from joint array
+        let filter1940 = jointData.filter((article1940) => {
+          if (article1940.year === "1940's") {
+            return true;
+          }
+        });
+        console.log(filter1930);
+    
+        let filter1940Articles = filter1940
+          .map((articles1940) => {
+            return `
             <div class="card bg-light text-black" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1940.title}</h5>
@@ -289,11 +289,287 @@ axios
                 </div>
               </div>
             </div>`;
+          })
+          .join("");
+    
+        //Show 1930 array in browser
+        document.getElementById("article1940").innerHTML = filter1940Articles.replace(
+          /\n/g,
+          "<br>"
+        );
+
+    //Filter 1950 articles from joint array
+    let filter1950 = jointData.filter((article1950) => {
+      if (article1950.year === "1950's") {
+        return true;
+      }
+    });
+    console.log(filter1950);
+
+    let filter1950Articles = filter1950
+      .map((articles1950) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1950.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1950.year}</h6>
+                <p class="text-truncated">${articles1950.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1950.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1950.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1950.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1950.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
       })
       .join("");
 
-    //Show 1930 array in browser
-    document.getElementById("article1940").innerHTML = filter1940Articles.replace(
+    //Show 1950 array in browser
+    document.getElementById("article1950").innerHTML = filter1950Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1960 articles from joint array
+    let filter1960 = jointData.filter((article1960) => {
+      if (article1960.year === "1960's") {
+        return true;
+      }
+    });
+    console.log(filter1960);
+
+    let filter1960Articles = filter1960
+      .map((articles1960) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1960.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1960.year}</h6>
+                <p class="text-truncated">${articles1960.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1960.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1960.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1960.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1960.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+      })
+      .join("");
+
+    //Show 1960 array in browser
+    document.getElementById("article1960").innerHTML = filter1960Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1970 articles from joint array
+    let filter1970 = jointData.filter((article1970) => {
+      if (article1970.year === "1970's") {
+        return true;
+      }
+    });
+    console.log(filter1970);
+
+    let filter1970Articles = filter1970
+      .map((articles1970) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1970.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1970.year}</h6>
+                <p class="text-truncated">${articles1970.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1970.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1970.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1970.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1970.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+      })
+      .join("");
+
+    //Show 1970 array in browser
+    document.getElementById("article1970").innerHTML = filter1970Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1980 articles from joint array
+    let filter1980 = jointData.filter((article1980) => {
+      if (article1980.year === "1980's") {
+        return true;
+      }
+    });
+    console.log(filter1980);
+
+    let filter1980Articles = filter1980
+      .map((articles1980) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1980.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1980.year}</h6>
+                <p class="text-truncated">${articles1980.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1980.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1980.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1980.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1980.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+      })
+      .join("");
+
+    //Show 1980 array in browser
+    document.getElementById("article1980").innerHTML = filter1980Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 1990 articles from joint array
+    let filter1990 = jointData.filter((article1990) => {
+      if (article1990.year === "1990's") {
+        return true;
+      }
+    });
+    console.log(filter1990);
+
+    let filter1990Articles = filter1990
+      .map((articles1990) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles1990.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles1990.year}</h6>
+                <p class="text-truncated">${articles1990.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1990.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles1990.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles1990.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles1990.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+      })
+      .join("");
+
+    //Show 1990 array in browser
+    document.getElementById("article1990").innerHTML = filter1990Articles.replace(
+      /\n/g,
+      "<br>"
+    );
+
+    //Filter 2000 articles from joint array
+    let filter2000 = jointData.filter((article2000) => {
+      if (article2000.year === "2000's") {
+        return true;
+      }
+    });
+    console.log(filter2000);
+
+    let filter2000Articles = filter2000
+      .map((articles2000) => {
+        return `
+            <div class="card bg-light text-black" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">${articles2000.title}</h5>
+                <h6 class="card-subtitle mb-2">${articles2000.year}</h6>
+                <p class="text-truncated">${articles2000.article}</p>
+                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles2000.id}" type="button">Read More</a>
+              </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal bg-light text-light" id="${articles2000.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">${articles2000.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ${articles2000.article}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+      })
+      .join("");
+
+    //Show 2000 array in browser
+    document.getElementById("article2000").innerHTML = filter2000Articles.replace(
       /\n/g,
       "<br>"
     );

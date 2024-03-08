@@ -6,6 +6,7 @@ const hbs = require('hbs')
 const reload = require('reload')
 const http = require('http') //reload
 const timeline = require('../routes/timeline'); //define routes path
+const theme = require('../routes/theme'); //define routes path
 const cors = require('cors');
 const favicon = require('serve-favicon')
 const saskatchewanRoute = require('../routes/saskatchewanRoute')
@@ -80,7 +81,6 @@ app.use('/alberta', timeline)
 // })
 
 app.get('/themes', (req, res) => {
-
     res.render('themes', {
         title: 'Theme',
     })

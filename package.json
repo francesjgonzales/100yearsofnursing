@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js -e hs,hbs && json-server --watch db.json --port 3000",
-    "db": "json-server ./database/db.json",
     "serve": "node ./src/app.js"
   },
   "keywords": [],

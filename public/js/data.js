@@ -2,8 +2,8 @@ io() //websocket connection
 
 // fetch api
 const endpoints = [
-  "http://localhost:3000/alberta",
-  "http://localhost:3000/saskatchewan",
+  "http://localhost:3000/api/alberta",
+  "http://localhost:3000/api/saskatchewan",
 ];
 
 //START Get all response for Alberta and Saskatchewan
@@ -18,7 +18,7 @@ axios
     //Get All Data for Alberta and Saskatchewan
     let alberta = allResponses[0].data
     let saskatchewan = allResponses[1].data
-    let jointData = alberta.concat(saskatchewan) //joint both as one array
+    let jointData = alberta.concat(saskatchewan) //combine both as one array
 
     //Create a function to generate modal cards based on dynamic response data
 

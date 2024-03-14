@@ -2,8 +2,8 @@ io() //websocket connection
 
 // fetch api
 const endpoints = [
-  "http://localhost:3000/api/alberta",
-  "http://localhost:3000/api/saskatchewan",
+  "https://one00yearsofnursing.onrender.com/api/alberta",
+  "https://one00yearsofnursing.onrender.com/api/saskatchewan",
 ];
 
 //START Get all response for Alberta and Saskatchewan

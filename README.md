@@ -6,8 +6,8 @@
 2. Used MVC architecture
 3. Used Bootstrap as CSS framework
 4. Used Mongoose for database
-5. Used (Axios)[https://axios-http.com/] for data fetching
-    - (Handling Errors)[https://axios-http.com/docs/handling_errors]
+5. Used [Axios](https://axios-http.com/) for data fetching
+    - [Handling Errors](https://axios-http.com/docs/handling_errors)
 5. Used Express JS as Node JS framework for handling routes, request and response
 6. [HBS for compiling HTML templates](https://www.npmjs.com/package/express-hbs)
 7. **SECURING THE SERVER** Used Error Middleware as callback function that can detect request and response when called in from client to HTTP server. This secures error paths that can be hidden in browser and customized by using the callback function written.
@@ -47,3 +47,7 @@
 ## Axios
 
 [https://blog.logrocket.com/understanding-axios-get-requests/]
+
+
+## Git
+Create new branch - `git checkout -b ＜new-branch＞`

@@ -134,7 +134,7 @@ body {
 /* END article */
 .vertical-line {
   border-left: 2px solid green;
-  height: 320vh;
+  height: 324vh;
   position: absolute;
   left: 50%;
   margin-left: -3px;

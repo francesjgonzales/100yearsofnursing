@@ -1,50 +1,54 @@
-require('dotenv').config()
+require('dotenv').config() // .env
 
-const path = require('path')
 const express = require('express')
-const hbs = require('hbs')
-const reload = require('reload')
-const http = require('http') //reload
-const timeline = require('../routes/timeline'); //define routes path
-const theme = require('../routes/theme'); //define routes path
-const cors = require('cors');
+const path = require('path') // Express.js
+const hbs = require('hbs') // Express-hbs template engine
+const cors = require('cors'); //cross 
 const favicon = require('serve-favicon')
-const saskatchewanRoute = require('../routes/saskatchewanRoute')
+
+// Define Route Path
+const timeline = require('../routes/timeline');
+const theme = require('../routes/theme');
+const saskatchewanRoute = require('../routes/saskatchewanRoute') 
 const albertaRoute = require('../routes/albertaRoute')
-const socketio = require('socket.io')
 const errorMiddleware = require('../middleware/errorMiddleware')
 
+// Define Socket.io
+const app = require('express')();
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
-const app = express()
-const server = http.createServer(app) // //Reload start
-const io = socketio(server)
+// Initialize Socket.io server
+io.on('connection', () => { console.log('new websocket connection') });
+server.listen(3000);
 
-//Set up reload 
-app.set('port', process.env.PORT || 4000)
+// Define Mongoose for database
+const port = process.env.PORT || 3000
+const MONGOURL = process.env.DATABASE_URL
 
-// Define Paths for Express config
+// Define Template Paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
-/* const templatesPath = path.join(__dirname, '../templates') */
 const indexPathFile = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
+
+// MIDDLEWARES
+// 1. Favicon middleware - third-party
 app.use(favicon(path.join(__dirname, '../public/favicon.ico')))
 
-/* Mongoose Database middlewares */
-app.use(express.json()) //middleware for app to listen to database
-/* app.use(express.urlencoded({ extended: false })) //to UPDATE using form-data instead of JSON in POSTMAN */
+// 2. Built-in middleware - Parses incoming requests with JSON payload. Used in development stage when using POST method.
+app.use(express.json())
+// Optional - if you want to use form-data to UPDATE document
+/* app.use(express.urlencoded({ extended: false }))*/
 
-// Use PORT provided in environment or default to 3000
-/* const port = process.env.PORT || 4000;
-
-// Listen on `port` and 0.0.0.0
-app.listen(port, "0.0.0.0", function () {
-    console.log('Server up in port 4000.')
-}); */
-
-// Set up CORS middleware
+// 3. CORS middleware
 app.use(cors());
 
-// Set up template engine called HBShandlebars for Express - hbs
+// 4. Error-handling middleware
+app.use(errorMiddleware)
+
+// --------------------------------------------------------------
+
+// Set up Express-hbs template engine
 app.set('view engine', 'hbs');
 app.set('views', indexPathFile)
 hbs.registerPartials(partialsPath)
@@ -52,89 +56,79 @@ hbs.registerPartials(partialsPath)
 // Set up static directory
 app.use(express.static(publicDirectoryPath))
 
+// --------------------------------------------------------------
 
-// Set up route handlers
+// Binding Application-level middleware using GET and app.use function handler for all web pages
+// 1. Homepage
 app.get('/', (req, res) => {
-    /* throw new Error('fake error') */ //used to test error middleware
+    /* throw new Error('fake error') */ // Used to test error middleware
     res.render('index')
 })
 
-//add middleware routes between database and app
-app.use('/api/saskatchewan', saskatchewanRoute)
-app.use('/api/alberta', albertaRoute)
-
-// Set up routes
+// 2. Timeline Page
 app.use('/timeline', timeline)
 app.use('/alberta', timeline)
 
-
-/* app.get('/timeline', (req, res) => {
-    res.render('timeline', {
-        title: "Timeline"
-    })
-}) */
-
-// app.get('/timeline/pre1900', (req, res) => {
-//     res.render('pre1900', {
-//         layout: "pre1900"
-//     })
-// })
-
+// 3. Themes Page
 app.get('/themes', (req, res) => {
     res.render('themes', {
         title: 'Theme',
     })
 })
 
+// 4. Photos Page
 app.get('/photos', (req, res) => {
     res.render('photos', {
         title: 'Photo Gallery',
     })
 })
 
+// 5. Videos Page
 app.get('/video', (req, res) => {
     res.render('video', {
         title: "100 Years of Nursing in Film"
     })
 })
 
+// 6. Credits Page
 app.get('/credit', (req, res) => {
     res.render('credit', {
         title: "One Hundred Years of Nursing on the Prairies Credits"
     })
 })
 
-io.on('connection', () => {
-    console.log('new websocket connection');
-})
+// --------------------------------------------------------------
 
-//connect to Mongodb
-const MONGOURL = process.env.DATABASE_URL
+// Mongoose database - Refer to controller folder for Application-level middleware that contains CRUD logic
+app.use('/api/saskatchewan', saskatchewanRoute)
+app.use('/api/alberta', albertaRoute)
+
+// Connect to Mongodb using Mongoose
 const mongoose = require('mongoose');
-// set up Error middleware
-app.use(errorMiddleware)
+
 mongoose.connect(MONGOURL)
     .then(() => {
         console.log('Mongoose Connected!')
         //start up server
-        app.listen(3000, () => {
-            console.log('Server up in port 3000.')
+        app.listen(//Set up reload 
+app.set(port), () => {
+            console.log(`Server up in port ${port}.`)
         })
     }).catch((error) => {
         console.log(error);
     });
 
-// Reload code here
-reload(app).then(() => {
-    // reloadReturned is documented in the returns API in the README
+// Reload code here - for development stage only
+// reload(app).then(() => {
+//     // reloadReturned is documented in the returns API in the README
 
-    // Reload started, start web server
-    server.listen(app.get('port'), () => {
-        console.log('Web server listening on port ' + app.get('port'))
-    })
-}).catch((error) => {
-    res.status(500)
-    throw new Error(error.message)
-    /* console.error('Reload could not start, could not start app.js', err) */
-})
+//     // Reload started, start web server
+//     server.listen(app.get(port), () => {
+//         console.log('Web server listening on port ' + app.get(port))
+//     })
+// }).catch((error) => {
+//     res.status(500)
+//     throw new Error(error.message)
+//     /* console.error('Reload could not start, could not start app.js', err) */
+// })
 

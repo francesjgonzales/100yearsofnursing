@@ -1,5 +1,3 @@
-io() //websocket connection
-
 // fetch api
 const endpoints = [
   "https://one00yearsofnursing.onrender.com/api/alberta",
@@ -579,7 +577,7 @@ axios
 
 
 
-  //Handling error
+  //Handling database error
   .catch((error) => {
     if (error.response) {
       // The request was made and the server responded with a status code
@@ -587,15 +585,7 @@ axios
       console.log("Data Error Message:", error.response.data);
       console.log("Status Error Message:", error.response.status);
       console.log("Headers Error Message:", error.response.headers);
-    } else if (error.request) {
-      // The request was made but no response was received
-      // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-      // http.ClientRequest in node.js
-      console.log(error.request);
-    } else {
-      // Something happened in setting up the request that triggered an Error
-      console.log("Request Error Message:", error.message);
     }
-    console.log("Config Error Message: (Check Json-server):", error.config);
   });
+
 // END Axios Response

@@ -52,6 +52,7 @@ app.use(errorMiddleware)
 app.set('view engine', 'hbs');
 app.set('views', indexPathFile)
 hbs.registerPartials(partialsPath)
+hbs.registerPartials(timelinePathFile)
 
 // Set up static directory
 app.use(express.static(publicDirectoryPath))
@@ -66,7 +67,7 @@ app.get('/', (req, res) => {
 })
 
 // 2. Timeline Page
-app.use('/timeline', timeline)
+app.use('/timeline/', timeline)
 app.use('/alberta', timeline)
 
 // 3. Themes Page
@@ -117,6 +118,8 @@ app.set(port), () => {
     }).catch((error) => {
         console.log(error);
     });
+
+// --------------------------------------------------------------
 
 // Reload code here - for development stage only
 // reload(app).then(() => {

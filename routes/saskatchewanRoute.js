@@ -1,3 +1,4 @@
+// Mongoose set up
 const express = require('express');
 const { getAllSaskatchewan, getOneSaskatchewan, postManySaskatchewan, putOneSaskatchewan, deleteOneSaskatchewan } = require('../controller/saskatchewanController')
 

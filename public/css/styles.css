@@ -83,12 +83,22 @@ body {
 /* END carousel */
 
 /* START All media queries */
-@media (max-width: 767px) {
+
+/* largest and up screens */
+@media (max-width: 1920px) {
   .carousel-inner .carousel-item > div {
     display: none;
   }
   .carousel-inner .carousel-item > div:nth-child(-n + 2) {
     display: block;
+  }
+  .vertical-line {
+    border-left: 2px solid green;
+    height: 315vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    /* top: 0; */
   }
 }
 
@@ -132,11 +142,5 @@ body {
   text-overflow: ellipsis;
 }
 /* END article */
-.vertical-line {
-  border-left: 2px solid green;
-  height: 324vh;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  /* top: 0; */
-}
+
+

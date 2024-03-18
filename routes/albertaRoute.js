@@ -1,3 +1,4 @@
+// Mongoose set up
 const express = require('express');
 const { getAllAlberta, getOneAlberta, putOneAlberta, deleteOneAlberta, postManyAlberta } = require('../controller/albertaController')
 

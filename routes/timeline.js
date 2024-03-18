@@ -1,3 +1,4 @@
+// HBS template engine set up
 const express = require('express');
 const router = express.Router();
 

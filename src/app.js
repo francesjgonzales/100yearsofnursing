@@ -1,5 +1,5 @@
 require('dotenv').config() // .env
-
+const reload = require('reload') // For development to refresh browser when change occur
 const express = require('express')
 const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine
@@ -52,7 +52,6 @@ app.use(errorMiddleware)
 app.set('view engine', 'hbs');
 app.set('views', indexPathFile)
 hbs.registerPartials(partialsPath)
-hbs.registerPartials(timelinePathFile)
 
 // Set up static directory
 app.use(express.static(publicDirectoryPath))
@@ -122,16 +121,16 @@ app.set(port), () => {
 // --------------------------------------------------------------
 
 // Reload code here - for development stage only
-// reload(app).then(() => {
-//     // reloadReturned is documented in the returns API in the README
+reload(app).then(() => {
+    // reloadReturned is documented in the returns API in the README
 
-//     // Reload started, start web server
-//     server.listen(app.get(port), () => {
-//         console.log('Web server listening on port ' + app.get(port))
-//     })
-// }).catch((error) => {
-//     res.status(500)
-//     throw new Error(error.message)
-//     /* console.error('Reload could not start, could not start app.js', err) */
-// })
+    // Reload started, start web server
+    server.listen(app.get(port), () => {
+        console.log('Web server listening on port ' + app.get(port))
+    })
+}).catch((err) => {
+    // res.status(500)
+    // throw new Error(error.message)
+    console.error('Reload could not start, could not start app.js', err)
+})
 

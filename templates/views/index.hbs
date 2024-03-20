@@ -2,13 +2,14 @@
 
 <body>
   {{>navbar}}
-  {{>carousel}}
+  {{!-- {{>carousel}} --}}
 
   <!-- Main Page -->
-  <div class="container-fluid p-5 bg-light">
+  <div class="container p-5 bg-light">
 
-    <div class="container-xl mb-4 text-dark">
+    <div class="container mb-4 text-dark">
       <h1>About 100 Years of Nursing</h1>
+       {{>carousel}}
       <p>
         For the past century Registered nurses and Registered Psychiatric
         Nurses have provided care to the families, to the sick and injured of
@@ -55,8 +56,10 @@
         organizations helped to pull this together. Please see the credits.
       </p>
     </div>
-  {{>footer}}
   </div>
+
+
+  {{>footer}}
   
 
   {{>script}}

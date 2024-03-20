@@ -24,8 +24,10 @@ ul {
 
 /* START Main container */
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #1a2026 !important;
+  background-color: #1a2026;
+  background-image: url("../img/100yearslogo-bg.png");
+  background-repeat: repeat;
+  height: auto;
 }
 
 /* .container-fluid {
@@ -58,12 +60,12 @@ body {
 /* END navbar */
 
 /* START carousel */
-.carousel-bg {
+/* .carousel-bg {
   background-color: #1a2026;
   background-image: url("../img/100yearslogo-bg.png");
   background-repeat: repeat;
   height: auto;
-}
+} */
 
 .carousel-control-prev {
   background-image: linear-gradient(
@@ -81,6 +83,33 @@ body {
   );
 }
 /* END carousel */
+
+/* START article */
+#about-nursing {
+  background-color: #edf5e0;
+}
+
+.text-truncated {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+/* END article */
+
+/* START Container */
+.container {
+  border-radius: 15px;
+}
+/* END Container */
+
+/* START Hyperlinks */
+a {
+  color: white;
+  text-decoration: none;
+}
+
 
 /* START All media queries */
 
@@ -128,19 +157,3 @@ body {
   }
   /* END media queries */
 }
-
-/* START article */
-#about-nursing {
-  background-color: #edf5e0;
-}
-
-.text-truncated {
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-}
-/* END article */
-
-

@@ -18,9 +18,9 @@ const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-// Initialize Socket.io server
-io.on('connection', () => { console.log('new websocket connection') });
-server.listen(3000);
+// Initialize Socket.io server - FOR PRODUCTION
+// io.on('connection', () => { console.log('new websocket connection') });
+// server.listen(3000);
 
 // Define Mongoose for database
 const port = process.env.PORT || 3000
@@ -120,7 +120,7 @@ app.set(port), () => {
 
 // --------------------------------------------------------------
 
-// Reload code here - for development stage only
+// Reload code here - FOR DEVELOPMENT
 reload(app).then(() => {
     // reloadReturned is documented in the returns API in the README
 

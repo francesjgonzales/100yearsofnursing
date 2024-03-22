@@ -117,9 +117,9 @@ hr.rounded {
     margin-left: -3px;
     /* top: 0; */
   }
-  .container {
+  /* .container {
     max-width: 1200px !important;
-  }
+  } */
 }
 
 .carousel-inner .carousel-item.active,
@@ -147,8 +147,8 @@ hr.rounded {
     margin-bottom: 20px;
   }
 
-  .container {
+  /* .container {
     max-width: 650px !important;
-  }
+  } */
   /* END media queries */
 }

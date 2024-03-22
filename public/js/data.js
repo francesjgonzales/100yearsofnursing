@@ -77,17 +77,17 @@ axios
     let filter1900Articles = filter1900
       .map((articles1900) => {
         return `
-       <div class="card bg-light text-black" style="width: 20rem;">
+       <div class="card m-3" style="width: 20rem;">
           <div class="card-body">
-            <h5 class="card-title">${articles1900.title}</h5>
-            <h6 class="card-subtitle mb-2">${articles1900.year}</h6>
+          <h6 class="card-subtitle card-header mb-2">${articles1900.year}</h6>
+            <h5 class="card-title text-success">${articles1900.title}</h5>
             <p class="text-truncated">${articles1900.article}</p>
             <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1900.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${articles1900.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light" id="${articles1900.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -123,17 +123,17 @@ axios
     let filter1910Articles = filter1910
       .map((articles1910) => {
         return `
-        <div class="card mx-2" style="width: 20rem;">
+        <div class="card m-3" style="width: 20rem;">
           <div class="card-body">
+          <h6 class="card-subtitle card-header mb-2">${articles1910.year}</h6>
             <h5 class="card-title">${articles1910.title}</h5>
-            <h6 class="card-subtitle mb-2">${articles1910.year}</h6>
             <p class="text-truncated">${articles1910.article}</p>
             <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1910.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${articles1910.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light" id="${articles1910.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -169,17 +169,17 @@ axios
     let filter1920Articles = filter1920
       .map((articles1920) => {
         return `
-        <div class="card bg-light text-black" style="width: 20rem;">
+        <div class="card m-3" style="width: 20rem;">
           <div class="card-body">
-            <h5 class="card-title">${articles1920.title}</h5>
-            <h6 class="card-subtitle mb-2">${articles1920.year}</h6>
+          <h6 class="card-subtitle card-header mb-2">${articles1920.year}</h6>
+            <h5 class="card-title text-success">${articles1920.title}</h5>
             <p class="text-truncated">${articles1920.article}</p>
             <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1920.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${articles1920.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light" id="${articles1920.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -215,7 +215,7 @@ axios
     let filter1930Articles = filter1930
       .map((articles1930) => {
         return `
-        <div class="card bg-light text-black" style="width: 20rem;">
+        <div class="card m-3" style="width: 20rem;">
           <div class="card-body">
             <h5 class="card-title">${articles1930.title}</h5>
             <h6 class="card-subtitle mb-2">${articles1930.year}</h6>
@@ -225,7 +225,7 @@ axios
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${articles1930.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light" id="${articles1930.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -261,17 +261,17 @@ axios
     let filter1940Articles = filter1940
       .map((articles1940) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
-                <h5 class="card-title">${articles1940.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1940.year}</h6>
+              <h6 class="card-subtitle card-header mb-2">${articles1940.year}</h6>
+                <h5 class="card-title text-success">${articles1940.title}</h5>
                 <p class="text-truncated">${articles1940.article}</p>
                 <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1940.id}" type="button">Read More</a>
               </div>
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1940.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1940.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -307,17 +307,17 @@ axios
     let filter1950Articles = filter1950
       .map((articles1950) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
-                <h5 class="card-title">${articles1950.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1950.year}</h6>
+              <h6 class="card-subtitle mb-2">${articles1950.year}</h6>
+                <h5 class="card-title text-success">${articles1950.title}</h5>
                 <p class="text-truncated">${articles1950.article}</p>
                 <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1950.id}" type="button">Read More</a>
               </div>
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1950.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1950.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -353,17 +353,17 @@ axios
     let filter1960Articles = filter1960
       .map((articles1960) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
+              <h6 class="card-subtitle card-header mb-2">${articles1960.year}</h6>
                 <h5 class="card-title">${articles1960.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1960.year}</h6>
                 <p class="text-truncated">${articles1960.article}</p>
                 <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1960.id}" type="button">Read More</a>
               </div>
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1960.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1960.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -399,7 +399,7 @@ axios
     let filter1970Articles = filter1970
       .map((articles1970) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1970.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1970.year}</h6>
@@ -409,7 +409,7 @@ axios
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1970.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1970.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -445,7 +445,7 @@ axios
     let filter1980Articles = filter1980
       .map((articles1980) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1980.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1980.year}</h6>
@@ -455,7 +455,7 @@ axios
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1980.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1980.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -491,7 +491,7 @@ axios
     let filter1990Articles = filter1990
       .map((articles1990) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1990.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1990.year}</h6>
@@ -501,7 +501,7 @@ axios
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles1990.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles1990.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -537,7 +537,7 @@ axios
     let filter2000Articles = filter2000
       .map((articles2000) => {
         return `
-            <div class="card bg-light text-black" style="width: 20rem;">
+            <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles2000.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles2000.year}</h6>
@@ -547,7 +547,7 @@ axios
             </div>
     
             <!-- Modal -->
-            <div class="modal bg-light text-light" id="${articles2000.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal bg-light" id="${articles2000.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">

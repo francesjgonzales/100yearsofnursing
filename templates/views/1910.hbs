@@ -4,19 +4,11 @@
   {{>navbar}}
 
   <!-- Main Page -->
-  <div class="container-fluid p-5 text-bg-light">
-    <div class="container-xl mb-4">
-      <h4>Browse the history of nursing in Saskatchewan and Alberta by timeline.</h4>
-    </div>
+  <div class="container p-5 bg-light">
+    {{>timelineIntro}}
     {{!-- Each Pre1900 articles is shown --}}
     <div class="container">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/timeline">Timeline</a></li>
-          <li class="mx-2">/</li>
-          <li class="breadcrumb-item active text-dark" aria-current="page">1910</li>
-        </ol>
-      </nav>
+      {{>breadcrumbs}}
       <div class="row" id="preArticle1900" style="display:none"></div>
       <div class="row" id="article1900" style="display:none"></div>
       <div class="row" id="article1910"></div>

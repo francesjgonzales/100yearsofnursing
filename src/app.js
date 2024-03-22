@@ -1,5 +1,5 @@
 require('dotenv').config() // .env
-/* const reload = require('reload')  */// For development to refresh browser when change occur
+/* const reload = require('reload') */ // For development to refresh browser when change occur
 const express = require('express')
 const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine
@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
 
 // 2. Timeline Page
 app.use('/timeline/', timeline)
-app.use('/alberta', timeline)
+/* app.use('/alberta', timeline) */
 
 // 3. Themes Page
 app.get('/themes', (req, res) => {
@@ -132,5 +132,6 @@ mongoose.connect(MONGOURL)
     // res.status(500)
     // throw new Error(error.message)
     console.error('Reload could not start, could not start app.js', err)
-}) */
+})
 
+ */

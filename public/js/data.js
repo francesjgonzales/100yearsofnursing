@@ -31,17 +31,17 @@ axios
     let filterPre1900Articles = filterPre1900
       .map((pre1900articles) => {
         return `
-        <div class="card bg-light text-black" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">${pre1900articles.title}</h5>
-            <h6 class="card-subtitle mb-2">${pre1900articles.year}</h6>
+        <div class="card m-3" style="width: 20rem;">
+        <div class="card-body">
+        <h6 class="card-subtitle mb-2 card-header">${pre1900articles.year}</h6>
+            <h5 class="card-title text-success">${pre1900articles.title}</h5>
             <p class="text-truncated">${pre1900articles.article}</p>
             <a class="card-link" data-bs-toggle="modal" data-bs-target="#${pre1900articles.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${pre1900articles.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light" id="${pre1900articles.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -123,7 +123,7 @@ axios
     let filter1910Articles = filter1910
       .map((articles1910) => {
         return `
-        <div class="card bg-light text-black" style="width: 20rem;">
+        <div class="card mx-2" style="width: 20rem;">
           <div class="card-body">
             <h5 class="card-title">${articles1910.title}</h5>
             <h6 class="card-subtitle mb-2">${articles1910.year}</h6>
@@ -250,17 +250,17 @@ axios
       "<br>"
     );
 
-        //Filter 1930 articles from joint array
-        let filter1940 = jointData.filter((article1940) => {
-          if (article1940.year === "1940's") {
-            return true;
-          }
-        });
-        console.log(filter1930);
-    
-        let filter1940Articles = filter1940
-          .map((articles1940) => {
-            return `
+    //Filter 1930 articles from joint array
+    let filter1940 = jointData.filter((article1940) => {
+      if (article1940.year === "1940's") {
+        return true;
+      }
+    });
+    console.log(filter1930);
+
+    let filter1940Articles = filter1940
+      .map((articles1940) => {
+        return `
             <div class="card bg-light text-black" style="width: 20rem;">
               <div class="card-body">
                 <h5 class="card-title">${articles1940.title}</h5>
@@ -287,14 +287,14 @@ axios
                 </div>
               </div>
             </div>`;
-          })
-          .join("");
-    
-        //Show 1930 array in browser
-        document.getElementById("article1940").innerHTML = filter1940Articles.replace(
-          /\n/g,
-          "<br>"
-        );
+      })
+      .join("");
+
+    //Show 1930 array in browser
+    document.getElementById("article1940").innerHTML = filter1940Articles.replace(
+      /\n/g,
+      "<br>"
+    );
 
     //Filter 1950 articles from joint array
     let filter1950 = jointData.filter((article1950) => {

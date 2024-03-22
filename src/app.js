@@ -9,7 +9,7 @@ const favicon = require('serve-favicon')
 // Define Route Path
 const timeline = require('../routes/timeline');
 const theme = require('../routes/theme');
-const saskatchewanRoute = require('../routes/saskatchewanRoute') 
+const saskatchewanRoute = require('../routes/saskatchewanRoute')
 const albertaRoute = require('../routes/albertaRoute')
 const errorMiddleware = require('../middleware/errorMiddleware')
 
@@ -19,8 +19,8 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 // Initialize Socket.io server - FOR PRODUCTION
-// io.on('connection', () => { console.log('new websocket connection') });
-// server.listen(3000);
+io.on('connection', () => { console.log('new websocket connection') });
+server.listen(3000);
 
 // Define Mongoose for database
 const port = process.env.PORT || 3000
@@ -111,9 +111,9 @@ mongoose.connect(MONGOURL)
         console.log('Mongoose Connected!')
         //start up server
         app.listen(//Set up reload 
-app.set(port), () => {
-            console.log(`Server up in port ${port}.`)
-        })
+            app.set(port), () => {
+                console.log(`Server up in port ${port}.`)
+            })
     }).catch((error) => {
         console.log(error);
     });
@@ -121,7 +121,7 @@ app.set(port), () => {
 // --------------------------------------------------------------
 
 // Reload code here - FOR DEVELOPMENT
-reload(app).then(() => {
+/* reload(app).then(() => {
     // reloadReturned is documented in the returns API in the README
 
     // Reload started, start web server
@@ -132,5 +132,5 @@ reload(app).then(() => {
     // res.status(500)
     // throw new Error(error.message)
     console.error('Reload could not start, could not start app.js', err)
-})
+}) */
 

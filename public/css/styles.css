@@ -9,18 +9,6 @@
 .hidden {
   display: none;
 }
-/* START font styling */
-/* h1,
-h2,
-h3,
-h4,
-h5,
-p,
-li,
-ul {
-  color: #1a2026;
-} */
-/* END font styling */
 
 /* START Main container */
 body {
@@ -30,17 +18,13 @@ body {
   height: auto;
 }
 
-/* .container-fluid {
-  --bs-gutter-x: 0rem !important;
-} */
+.container {
+  max-width: 1200px !important;
+}
+
 /* END Main container */
 
 /* START navbar */
-/* .bg-body-tertiary {
-  --bs-bg-opacity: 0 !important;
-  background-color: #1a2026 !important;
-} */
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -85,9 +69,9 @@ body {
 /* END carousel */
 
 /* START article */
-#about-nursing {
+/* #about-nursing {
   background-color: #edf5e0;
-}
+} */
 
 .text-truncated {
   -webkit-line-clamp: 3;
@@ -95,6 +79,15 @@ body {
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;
+}
+
+hr.rounded {
+  border-top: 8px solid #11b51c;
+  border-radius: 5px;
+}
+
+.card {
+  border-color: #3e8e41 !important;
 }
 /* END article */
 
@@ -105,11 +98,10 @@ body {
 /* END Container */
 
 /* START Hyperlinks */
-a {
-  color: white;
-  text-decoration: none;
+.nav-text-links {
+  color: white !important;
+  text-decoration: none !important;
 }
-
 
 /* START All media queries */
 

@@ -1,5 +1,5 @@
 require('dotenv').config() // .env
-const reload = require('reload') // For development to refresh browser when change occur
+/* const reload = require('reload')  */// For development to refresh browser when change occur
 const express = require('express')
 const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine

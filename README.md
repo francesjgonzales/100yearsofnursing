@@ -7,10 +7,10 @@
 3. Used Bootstrap as CSS framework
 4. Used Mongoose for database
 5. Used [Axios](https://axios-http.com/) for data fetching
-    - [Handling Errors](https://axios-http.com/docs/handling_errors)
-5. Used Express JS as Node JS framework for handling routes, request and response
-6. [HBS for compiling HTML templates](https://www.npmjs.com/package/express-hbs)
-7. **SECURING THE SERVER** Used Error Middleware as callback function that can detect request and response when called in from client to HTTP server. This secures error paths that can be hidden in browser and customized by using the callback function written.
+   - [Handling Errors](https://axios-http.com/docs/handling_errors)
+6. Used Express JS as Node JS framework for handling routes, request and response
+7. [HBS for compiling HTML templates](https://www.npmjs.com/package/express-hbs)
+8. **SECURING THE SERVER** Used Error Middleware as callback function that can detect request and response when called in from client to HTTP server. This secures error paths that can be hidden in browser and customized by using the callback function written.
 
 ## Testing Error-Handling Middleware
 
@@ -19,6 +19,7 @@
 3. (Documentation)[https://expressjs.com/en/guide/using-middleware.html#middleware.error-handling]
 
 ## Dependencies
+
 - Mongoose for MongoDB database
 - (hbs)[https://www.npmjs.com/package/hbs] for creating template
 - (express js)[https://expressjs.com/] node js framework that creates endpoints for multiple pages
@@ -48,6 +49,12 @@
 
 [https://blog.logrocket.com/understanding-axios-get-requests/]
 
-
 ## Git
+
 Create new branch - `git checkout -b ＜new-branch＞`
+
+## Development
+
+1. **Package.json** Add script `"start": "nodemon src/app.js -e html,hs,hbs reload",`
+2. **app.js** comment or delete `const reload = require('reload')`
+3. **.env** change `production` to `development`

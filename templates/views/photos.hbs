@@ -3,19 +3,39 @@
 <body>
     {{>navbar}}
     <!-- Main Page -->
-    <div class="container-fluid p-5 text-bg-light" id="main-page">
-        <div class="page-container">
-            <h1>{{title}}</h1>
-            <p>
+    <div class="container p-5 bg-light">
+        <div class="container mb-4 text-dark">
+            <h1 class="text-success">{{title}}</h1>
+        </div>
+        <div class="container">
+            <h5 class="lh-base" style="font-weight:300">
                 A picture is worth a thousand words, and although 100 Years of Nursing has many thousands of words the
                 following pictures capture the raw emotion and moments that maybe those words could not convey.
 
-                <ol>Alberta Gallery</ol>
-                <ol>Saskatchewan Gallery</ol>
-            </p>
+<section class="my-5">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card text-white bg-success mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Alberta Gallery</h3>
+                <p class="card-text">Collection of images from Alberta</p>
+                <a href="#" class="btn bg-light">View photos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-white bg-success mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Saskatchewan Gallery</h3>
+                <p class="card-text">Collection of images from Saskatchewan</p>
+                <a href="#" class="btn bg-light">View photos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            </h5>
         </div>
     </div>
-
-
     {{>script}}
     {{>footer}}

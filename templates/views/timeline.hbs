@@ -3,56 +3,325 @@
 <body>
   {{>navbar}}
 
+
   <!-- Main Page -->
-  <div class="container-fluid mt-5 p-5 bg-light">
-
-    <h1>{{title}}</h1>
-    <div class="page-container">
+  <div class="container p-5 bg-light">
+    <div class="container mb-4 text-dark">
+      <h1>{{title}}</h1>
       <h4>Browse the history of nursing in Saskatchewan and Alberta by timeline.</h4>
+    </div>
 
-      <a class="btn btn-primary" href="#" role="button">Pre 1900's</a>
-<button
-          class="infoCollapse btn btn-primary"
-          type="button"
-          onClick="toggleFunction(this.name)"
-          name="searchByPre1900"
-          id="noble"
-          style="font-size: 1.8rem"
-        >
-          Pre 1900's
-        </button>
+    <div class="container">
+      {{!-- Green line in the middle --}}
+      <div class="row justify-content-md-center">
+        <div class="vertical-line d-none d-sm-block"></div>
+      </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-
-            {{!-- Pre 1900 articles data are shown --}}
-            <div class="flexbox-container" id="searchByPre1900">
+      {{!-- Pre 1900s --}}
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Pre 1900's</h5>
+              <p class="card-text">Travel to pre-1900 Alberta, where nurses led groundbreaking innovations. Inspired by
+                Florence Nightingale, they pioneered transformative changes in healthcare, shaping a future of
+                excellence in nursing and healthcare across the region.</p>
+              <a href="/timeline/pre1900" class="btn btn-primary">View</a>
             </div>
           </div>
-          <div class="col">
-            <div class="d-flex justify-content-center" style="height: 100%;">
-              <div class="vr"></div>
+        </div>
+        <div class="col-sm-auto d-none 3">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 1900 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1900's</h5>
+              <p class="card-text">Transport yourself to the dynamic 1900s, where the Medicine Hat General Hospital
+                marked a historic milestone as the first regular hospital in "the territories," transforming healthcare
+                accessibility. Simultaneously, in Saskatoon, Sisters Guay and Phaneuf led pioneering efforts at St.
+                Paul's Hospital, forging new paths and leaving an indelible mark on medical care and innovation in
+                Saskatchewan.</p>
+              <a href="/timeline/1900" class="btn btn-primary">View</a>
             </div>
           </div>
-          <div class="col">
-            1900's
+        </div>
+      </div>
+
+      {{!-- 1910 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1910's</h5>
+              <p class="card-text">Step into the pivotal year of 1910, where Alberta nurses bravely ventured into the
+                "Great War," displaying unwavering dedication. Amidst the chaos, the specter of the Spanish influenza
+                cast a heavy shadow, showcasing the resilience and commitment of healthcare heroes in challenging times.
+              </p>
+              <a href="/timeline/1910" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 1920 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1920's</h5>
+              <p class="card-text">Step back into the vibrant 1920s, a time marked by bold changes and cultural shifts.
+                Meet Kate Brightly, a trailblazing figure who captured attention with her daring "bob" hairstyle,
+                symbolizing the spirit of independence and liberation that defined the era.</p>
+              <a href="/timeline/1920" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- 1930 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1930's</h5>
+              <p class="card-text">Journey to the 1930s, where the Great Depression shaped nursing. Despite challenges,
+                Kathleen Ellis established a pioneering nurses' college, reflecting nurses' resilience in providing
+                crucial care during tough times.</p>
+              <a href="/timeline/1930" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 1940 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1940's</h5>
+              <p class="card-text">Step into the dynamic 1940s, where healthcare milestones and remarkable individuals
+                shape the era. Agnes MacLeod leads wartime healthcare efforts as a courageous nurse. Air ambulance
+                services debut, transforming emergency response. Meanwhile, Georgiana Chartier's work at the Saskatoon
+                Sanatorium highlights the fight against tuberculosis, demonstrating healthcare resilience in combating
+                infectious diseases.</p>
+              <a href="/timeline/1940" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- 1950 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1950's</h5>
+              <p class="card-text">In the 1950s, nurses played a vital role in fighting polio and caring for affected
+                communities. Training courses for nursing housekeepers emphasized clean healthcare environments, while
+                psychiatric nursing gained recognition, reflecting a growing understanding of mental health needs.</p>
+              <a href="/timeline/1950" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 1960 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1960's</h5>
+              <p class="card-text">During the 1960s, Sophie Ann Kettleson's dedication to nursing inspired countless
+                others, fostering pride and commitment among nurses nationwide. Furthermore, the introduction of
+                Medicare significantly influenced healthcare policies, enhancing access to vital services for millions.
+              </p>
+              <a href="/timeline/1960" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- 1970 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1970's</h5>
+              <p class="card-text">In the 1970s, the birth of the United Nurses of Alberta (UNA) brought about immediate
+                challenges as it faced a bargaining crisis right from the start. In Saskatchewan, collective bargaining
+                was introduced, paving the way for the formation of the Saskatchewan Union of Nurses. This pivotal
+                development led to the historic 1976 negotiations where nurses in Saskatchewan fought for pay equity,
+                striving to match the wages of their counterparts in Alberta.</p>
+              <a href="/timeline/1970" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 1980 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1980's</h5>
+              <p class="card-text">In the 1980s, Heather Smith led nurses in advocating for patient care. Their first
+                major strike in 1980 highlighted their commitment to improving working conditions and patient care
+                standards. Despite challenges, nurses persisted in pushing for healthcare system improvements,
+                prioritizing the well-being of patients and healthcare professionals.</p>
+              <a href="/timeline/1980" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- 1990 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">1990's</h5>
+              <p class="card-text">During the 1990s, nursing negotiations advanced, signifying a dynamic era. Nurses
+                provided key insights on health reform in the early '90s, shaping ongoing conversations. Nevertheless,
+                the decade also witnessed widespread nurse layoffs, presenting significant challenges amidst evolving
+                healthcare environments.</p>
+              <a href="/timeline/1990" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+        </div>
+      </div>
+
+      {{!-- 2000 --}}
+      <div class="row justify-content-md-center mt-3">
+        <div class="col-md-auto" style="width:25rem">
+
+        </div>
+        <div class="col-sm-auto">
+        </div>
+        <div class="col-md-auto" style="width:25rem">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">2000's</h5>
+              <p class="card-text">In the 2000s, nursing saw significant advances like "nursing by phone," changing how
+                care is delivered. There was also a focus on Aboriginal nursing, addressing unique healthcare needs.
+                Moreover, more men joined the profession, reflecting its growing diversity.</p>
+              <a href="/timeline/2000" class="btn btn-primary">View</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    1910's 1920's 1930's 1940's 1950's 1960's 1970's
-    1980's 1990's 2000's
 
-    {{!-- Where db.json content are shown --}}
-    <div class="data-container"></div>
+
+
+    {{!-- <div class="container text-center">
+      <div class="row row-cols-4">
+        <div class="col">
+          <h5 class="card-title p-2">Pre 1900's</h5>
+          <a href="/timeline/pre1900" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1900's</h5>
+          <a href="/timeline/1900" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1910's</h5>
+          <a href="/timeline/1910" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1920's</h5>
+          <a href="/timeline/1920" class="btn btn-primary">View</a>
+        </div>
+      </div>
+      <div class="row row-cols-4">
+        <div class="col">
+          <h5 class="card-title p-2">Pre 1930's</h5>
+          <a href="/timeline/1930" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1940's</h5>
+          <a href="/timeline/1940" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1950's</h5>
+          <a href="/timeline/1950" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1960's</h5>
+          <a href="/timeline/1960" class="btn btn-primary">View</a>
+        </div>
+      </div>
+      <div class="row row-cols-4">
+        <div class="col">
+          <h5 class="card-title p-2">Pre 1970's</h5>
+          <a href="/timeline/pre1970" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1980's</h5>
+          <a href="/timeline/1980" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">1990's</h5>
+          <a href="/timeline/1990" class="btn btn-primary">View</a>
+        </div>
+        <div class="col">
+          <h5 class="card-title p-2">2000's</h5>
+          <a href="/timeline/2000" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div> --}}
+
   </div>
-
-
-
-  </div>
-
-
+    {{>footer}}
 
   {{>script}}
-  {{>footer}}
+  {{>dataFetch}}

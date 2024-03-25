@@ -1,0 +1,25 @@
+{{>header}}
+
+<body>
+  {{>navbar}}
+
+  <!-- Main Page -->
+  <div class="container p-5 bg-light">
+    {{>timelineIntro}}
+    {{!-- Each Pre1900 articles is shown --}}
+    <div class="container">
+      {{>breadcrumbs}}
+      <div class="row" id="preArticle1900" style="display:none"></div>
+      <div class="row" id="article1900" style="display:none"></div>
+      <div class="row" id="article1910" style="display:none"></div>
+      <div class="row" id="article1920" style="display:none"></div>
+      <div class="row" id="article1930" style="display:none"></div>
+      <div class="row" id="article1940" style="display:none"></div>
+      <div class="row" id="article1950" style="display:none"></div>
+      <div class="row" id="article1960"></div>
+    </div>
+  {{>footer}}
+  </div>
+
+  {{>script}}
+  {{>dataFetch}}

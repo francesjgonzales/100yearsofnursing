@@ -1,132 +1,140 @@
-<!-- Navbar -->
-{{! <nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img src="img/100yearslogo-white.svg" alt="100yearsofnursinglogo" width="auto" height="180vh" />
-    </a>
-    <a href="/timeline">Timeline</a>
-    <a href="/themes">Themes</a>
-    <a href="/photos">Photos</a>
-    <a href="/video">Video</a>
-    <a href="/credit">Credits</a>
-  </div>
-</nav> }}
+<div class="container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img
+          src="/img/100yearslogo-white.svg"
+          alt="100yearsofnursinglogo"
+          width="auto"
+          height="180vh"
+        /></a>
 
-<nav class="navbar navbar-expand-lg navbar-dark" aria-label="navbar">
-  <div class="container-xl">
-    <a class="navbar-brand" href="/"><img
-        src="/img/100yearslogo-white.svg"
-        alt="100yearsofnursinglogo"
-        width="auto"
-        height="180vh"
-      /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbartoggle"
-      aria-controls="navbartoggle"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarScroll"
+      >
 
-    <div class="collapse navbar-collapse" id="navbartoggle">
-      <div class="d-flex justify-content-end">
-        <ul class="navbar-nav d-flex justify-content-end">
-          <li class="nav-item me-4 dropdown">
-            <a
-              href="/timeline"
-              class="dropdown-toggle"
-              aria-expanded="false"
-            >Timeline</a>
-            <i class="bi bi-caret-down"></i>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a href="/timeline/pre1900" class="dropdown-item">Pre 1900's</a></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1900's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1910's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1920's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1930's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1940's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1950's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1960's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1970's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1980's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >1990's</button></li>
-              <li><button
-                  class="dropdown-item"
-                  type="button"
-                >2000's</button></li>
-            </ul>
-          </li>
-          <li class="nav-item me-4">
-            <a href="/themes">Themes</a>
-          </li>
-          <li class="nav-item me-4 dropdown">
-            <a
-              href="/photos"
-              class="dropdown-toggle"
-              data-bs-toggle=""
-              aria-expanded="false"
-            >Photos</a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a
-                  href="/timeline#pre1900"
-                  class="dropdown-item"
-                  type="button"
-                >Alberta Gallery</a></li>
-              <li><button class="dropdown-item" type="button">Saskatchewan
-                  Gallery</button></li>
-            </ul>
-          </li>
-          <li class="nav-item me-4">
-            <a href="/video">Video</a>
-          </li>
-          <li class="nav-item me-4">
-            <a href="/credit">Credits</a>
-          </li>
-          {{! <form role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form> }}
-        </ul>
+        <div>
+          <ul class="navbar-nav d-flex justify-content-end text-center">
+            <li class="nav-item me-4 dropdown">
+              <h4>
+                <a
+                  href="/timeline"
+                  class="dropdown-toggle nav-text-links"
+                  aria-expanded="false"
+                >Timeline</a>
+              </h4>
 
+              <i class="bi bi-caret-down"></i>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a href="/timeline/pre1900" class="dropdown-item">Pre 1900's</a></li>
+                <li><a
+                    href="/timeline/1900"
+                    class="dropdown-item"
+                  >1900's</a></li>
+                <li><a
+                    href="/timeline/1910"
+                    class="dropdown-item"
+                    type="button"
+                  >1910's</a></li>
+                <li><a
+                    href="/timeline/1920"
+                    class="dropdown-item"
+                    type="button"
+                  >1920's</a></li>
+                <li><a
+                    href="/timeline/1930"
+                    class="dropdown-item"
+                    type="button"
+                  >1930's</a></li>
+                <li><a
+                    href="/timeline/1940"
+                    class="dropdown-item"
+                    type="button"
+                  >1940's</a></li>
+                <li><a
+                    href="/timeline/1950"
+                    class="dropdown-item"
+                    type="button"
+                  >1950's</a></li>
+                <li><a
+                    href="/timeline/1960"
+                    class="dropdown-item"
+                    type="button"
+                  >1960's</a></li>
+                <li><a
+                    href="/timeline/1970"
+                    class="dropdown-item"
+                    type="button"
+                  >1970's</a></li>
+                <li><a
+                    href="/timeline/1980"
+                    class="dropdown-item"
+                    type="button"
+                  >1980's</a></li>
+                <li><a
+                    href="/timeline/1990"
+                    class="dropdown-item"
+                    type="button"
+                  >1990's</a></li>
+                <li><a
+                    href="/timeline/2000"
+                    class="dropdown-item"
+                    type="button"
+                  >2000's</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-4">
+              <h4>
+                <a href="/theme" class="nav-text-links">Themes</a>
+              </h4>
+            </li>
+            <li class="nav-item me-4 dropdown">
+              <h4>
+                <a
+                  href="/photos"
+                  class="dropdown-toggle nav-text-links"
+                  data-bs-toggle=""
+                  aria-expanded="false"
+                >Photos</a>
+              </h4>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a
+                    href="/timeline#pre1900"
+                    class="dropdown-item"
+                    type="button"
+                  >Alberta Gallery</a></li>
+                <li><button class="dropdown-item" type="button">Saskatchewan
+                    Gallery</button></li>
+              </ul>
+            </li>
+            <li class="nav-item me-4">
+              <h4>
+                <a href="/video" class="nav-text-links">Video</a>
+              </h4>
+            </li>
+            <li class="nav-item me-4">
+              <h4>
+                <a href="/credit" class="nav-text-links">Credits</a>
+              </h4>
+            </li>
+            {{! <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            </form> }}
+          </ul>
+
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

@@ -2,63 +2,138 @@
 
 <body>
   {{>navbar}}
-  {{>carousel}}
-
-
+  {{!-- {{>carousel}} --}}
 
   <!-- Main Page -->
-  <div class="container-fluid mt-5 p-5 bg-light" id="main-page">
+  <div class="container p-5 bg-light">
 
-    <div class="container-xl mb-4">
-            <h1>About 100 Years of Nursing</h1>
-      <p>
-        For the past century Registered nurses and Registered Psychiatric
-        Nurses have provided care to the families, to the sick and injured of
-        Alberta and Saskatchewan. At the bedside, on the homestead, at the war
-        front and in the hectic ER, nurses have comforted and cared.
-        <br />
+    <div class="container mb-4 text-dark">
+      <section class="mb-3">
+        <h1 class="text-success">About 100 Years of Nursing</h1>
+        {{>carousel}}
+        <h5 class="lh-base" style="font-weight:300">
+          For the past century Registered nurses and Registered Psychiatric
+          Nurses have provided care to the families, to the sick and injured of
+          Alberta and Saskatchewan. At the bedside, on the homestead, at the war
+          front and in the hectic ER, nurses have comforted and cared.
+          <br />
 
-        <br />This project celebrates the Alberta and Saskatchewan Centennials
-        and the contribution to this history from the tens of thousands of
-        nurses who have called these provinces home.<br /><br />
+          <br />This project celebrates the Alberta and Saskatchewan Centennials
+          and the contribution to this history from the tens of thousands of
+          nurses who have called these provinces home.<br /><br />
 
-        The Saskatchewan Union of Nurses and the United Nurses of Alberta
-        wanted to commemorate the Centennials. With the support of Canadian
-        Heritage we have produced this website and accompanying DVD to tell
-        some of the courageous and caring stories of the provinceU+2019s
-        nurses.<br /><br />
+          The Saskatchewan Union of Nurses and the United Nurses of Alberta
+          wanted to commemorate the Centennials. With the support of Canadian
+          Heritage we have produced this website and accompanying DVD to tell
+          some of the courageous and caring stories of the provinceU+2019s
+          nurses.<br /><br />
 
-        This is NOT a comprehensive history. We have only captured just a few
-        of the thousands of stories of nurses working in the homes and
-        hospitals of the prairies. Many, many other heart-warming stories of
-        the care provided by nurses exist but cannot all be told here.
-        <br /><br />
+          This is NOT a comprehensive history. We have only captured just a few
+          of the thousands of stories of nurses working in the homes and
+          hospitals of the prairies. Many, many other heart-warming stories of
+          the care provided by nurses exist but cannot all be told here.
+          <br /><br />
 
-        But, each member of our team has been moved by the power and intensity
-        of the stories, photos, and audiovisual material that we have managed
-        to assemble. We hope you will share in our excitement and pride in the
-        remarkable contribution that nurses have made to this important
-        century in our provinces.
-        <br /><br />
+          But, each member of our team has been moved by the power and intensity
+          of the stories, photos, and audiovisual material that we have managed
+          to assemble. We hope you will share in our excitement and pride in the
+          remarkable contribution that nurses have made to this important
+          century in our provinces.
+          <br /><br />
 
-        In the short time frame available for this project, we have done our
-        best to ensure accuracy; however, the volume of material means that
-        some errors will have necessarily slipped through. We appreciate
-        hearing about any of these errors.<br /><br />
+          In the short time frame available for this project, we have done our
+          best to ensure accuracy; however, the volume of material means that
+          some errors will have necessarily slipped through. We appreciate
+          hearing about any of these errors.<br /><br />
 
-        We must thank the many, many people in both provinces who assisted in
-        this compilation, either in telling their stories or by providing
-        material. And thank you to Canadian Heritage for supporting this
-        project.
-        <br /><br />
+          We must thank the many, many people in both provinces who assisted in
+          this compilation, either in telling their stories or by providing
+          material. And thank you to Canadian Heritage for supporting this
+          project.
+          <br /><br />
 
-        For more on the development of this project, please see the producers'
-        notes from Larry and Keith. Also, a great number of people and
-        organizations helped to pull this together. Please see the credits.
-      </p>
+          For more on the development of this project, please see the producers'
+          notes from Larry and Keith. Also, a great number of people and
+          organizations helped to pull this together. Please see the credits.
+        </h5>
+      </section>
+
+      <hr class="rounded my-5">
+
+      <section class="my-5">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card text-white bg-success mb-5">
+              <div class="card-header">Feature</div>
+              <div class="card-body">
+                <h3 class="card-title">Timeline</h3>
+                <p class="card-text">Browse the history of nursing in Saskatchewan and Alberta by timeline.</p>
+                <a href="/timeline" class="btn bg-light">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-white bg-success mb-5">
+              <div class="card-header">Feature</div>
+              <div class="card-body">
+                <h3 class="card-title">Theme</h3>
+                <p class="card-text">Browse the history of nursing in Saskatchewan and Alberta by the following Themes
+                </p>
+                <a href="/theme" class="btn bg-light">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="rounded my-5">
+
+      <section class="my-5">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card mb-5">
+              <div class="card-body">
+                <h3 class="card-title text-success">Photos</h3>
+                <p class="card-text">While 100 Years of Nursing is rich in words, these images encapsulate raw emotions
+                  and moments beyond verbal expression.</p>
+                <a href="/photos" class="btn bg-success text-light">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card mb-5">
+              <div class="card-body">
+                <h3 class="card-title text-success">Videos</h3>
+                <p class="card-text">The passionate stories of nursing as told by nurses themselves.</p>
+                <a href="/video" class="btn bg-success text-light">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+
+
+
+
+
+    <hr class="rounded my-5">
+
+    <section class="mt-5">
+      <h3 class="card-title text-success">Gratitude to our contributors</h3>
+      <p class="card-text">A celebration of the contributions over the last one hundred years of Registered Nurses and
+        Registered Psychiatric Nurses in Alberta and Saskatchewan.
+
+        A Centennial project of the United Nurses of Alberta and the Saskatchewan Union of Nurses..</p>
+      <a href="/credit" class="btn bg-success text-light">Read more</a>
+    </section>
+
   </div>
-<script></script>
+  </div>
+
+
+  {{>footer}}
+
 
   {{>script}}
-  {{>footer}}

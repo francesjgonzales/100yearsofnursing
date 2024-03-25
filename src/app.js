@@ -18,6 +18,7 @@ const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
+
 // Initialize Socket.io server - FOR PRODUCTION
 io.on('connection', () => { console.log('new websocket connection') });
 server.listen(3000);

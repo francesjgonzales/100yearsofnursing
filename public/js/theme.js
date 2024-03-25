@@ -23,35 +23,35 @@ axios
     //Create a function to generate modal cards based on dynamic response data
 
     //Filter Pre 1900 articles from joint array
-    let filterPre1900 = jointData.filter((pre1900) => {
-      if (pre1900.year === "Pre 1900's") {
+    let filterPioneerNursing = jointData.filter((PioneerNursing) => {
+      if (PioneerNursing.theme === "Pioneer Nursing") {
         return true;
       }
     });
-    console.log(filterPre1900);
+    console.log(filterPioneerNursing);
 
-    let filterPre1900Articles = filterPre1900
-      .map((pre1900articles) => {
+    let filterPioneerNursingArticles = filterPioneerNursing
+      .map((pioneerNursing) => {
         return `
         <div class="card bg-light text-black" style="width: 20rem;">
           <div class="card-body">
-            <h5 class="card-title">${pre1900articles.title}</h5>
-            <h6 class="card-subtitle mb-2">${pre1900articles.year}</h6>
-            <p class="text-truncated">${pre1900articles.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${pre1900articles.id}" type="button">Read More</a>
+            <h5 class="card-title">${pioneerNursing.title}</h5>
+            <h6 class="card-subtitle mb-2">${pioneerNursing.theme}</h6>
+            <p class="text-truncated">${pioneerNursing.article}</p>
+            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${pioneerNursing.id}" type="button">Read More</a>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal bg-light text-light" id="${pre1900articles.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal bg-light text-light" id="${pioneerNursing.id}" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">${pre1900articles.title}</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">${pioneerNursing.title}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${pre1900articles.article}
+                ${pioneerNursing.article}
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -63,7 +63,7 @@ axios
       .join("");
 
     //Show Pre 1900 array in browser
-    document.querySelector("#preArticle1900").innerHTML = filterPre1900Articles.replace(
+    document.querySelector("#pioneernursing").innerHTML = filterPioneerNursingArticles.replace(
       /\n/g,
       "<br>"
     );

@@ -1,5 +1,5 @@
 require('dotenv').config() // .env
-const reload = require('reload') // For development to refresh browser when change occur
+/* const reload = require('reload') */ // For development to refresh browser when change occur
 const express = require('express')
 const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine
@@ -121,7 +121,7 @@ mongoose.connect(MONGOURL)
 // --------------------------------------------------------------
 
 // Reload code here - FOR DEVELOPMENT
-reload(app).then(() => {
+/* reload(app).then(() => {
     // reloadReturned is documented in the returns API in the README
 
     // Reload started, start web server
@@ -132,5 +132,5 @@ reload(app).then(() => {
     // res.status(500)
     // throw new Error(error.message)
     console.error('Reload could not start, could not start app.js', err)
-})
+}) */
 

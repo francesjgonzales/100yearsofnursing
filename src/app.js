@@ -67,11 +67,11 @@ app.get('/', (req, res) => {
 
 // 2. Timeline Page
 app.use('/timeline/', timeline)
-/* app.use('/alberta', timeline) */
+app.use('/theme', theme)
 
 // 3. Themes Page
-app.get('/themes', (req, res) => {
-    res.render('themes', {
+app.get('/theme', (req, res) => {
+    res.render('theme', {
         title: 'Theme',
     })
 })

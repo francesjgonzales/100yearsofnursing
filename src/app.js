@@ -117,18 +117,3 @@ mongoose.connect(MONGOURL)
     });
 
 // --------------------------------------------------------------
-
-// Reload code here - FOR DEVELOPMENT
-/* reload(app).then(() => {
-    // reloadReturned is documented in the returns API in the README
-
-    // Reload started, start web server
-    server.listen(app.get('port'), () => {
-        console.log('Web server listening on port ' + app.get('port'))
-    })
-}).catch((err) => {
-    // res.status(500)
-    // throw new Error(error.message)
-    console.error('Reload could not start, could not start app.js', err)
-})
- */

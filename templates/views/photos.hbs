@@ -11,32 +11,579 @@
             <h5 class="lh-base" style="font-weight:300">
                 A picture is worth a thousand words, and although 100 Years of Nursing has many thousands of words the
                 following pictures capture the raw emotion and moments that maybe those words could not convey.
+            </h5>
 
-                <section class="my-5">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="card text-white bg-success mb-5">
-                                <div class="card-body">
-                                    <h3 class="card-title">Alberta Gallery</h3>
-                                    <p class="card-text">Collection of images from Alberta</p>
-                                    <a href="#" class="btn bg-light">View photos</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card text-white bg-success mb-5">
-                                <div class="card-body">
-                                    <h3 class="card-title">Saskatchewan Gallery</h3>
-                                    <p class="card-text">Collection of images from Saskatchewan</p>
-                                    <a href="#" class="btn bg-light">View photos</a>
-                                </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Images" aria-label="Search Images"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </div>
+                </li>
+
+                <li class="nav-item ps-5">
+
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Sort by</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Alberta</a></li>
+                        <li><a class="dropdown-item" href="#">Saskatchewan</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            {{!-- <section class="my-5">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card text-white bg-success mb-5">
+                            <div class="card-body">
+                                <h3 class="card-title">Alberta Gallery</h3>
+                                <p class="card-text">Collection of images from Alberta</p>
+                                <a href="#" class="btn bg-light">View photos</a>
                             </div>
                         </div>
                     </div>
-                </section>
-            </h5>
+                    <div class="col-sm">
+                        <div class="card text-white bg-success mb-5">
+                            <div class="card-body">
+                                <h3 class="card-title">Saskatchewan Gallery</h3>
+                                <p class="card-text">Collection of images from Saskatchewan</p>
+                                <a href="#" class="btn bg-light">View photos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> --}}
+        </div>
+
+        {{!-- All Images --}}
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/1949-bin-the-cockpit.png" class="rounded img-thumbnail" alt="1949 Bin the Cockpit"
+                        data-bs-toggle="modal" data-bs-target="#Cockpit">
+                </div>
+                <!-- Cockpit Modal -->
+                <div class="modal fade" id="Cockpit" tabindex="-1" aria-labelledby="CockpitLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="CockpitLabel">1949 Bin The Cockpit</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/1949-bin-the-cockpit.png" class="rounded img-thumbnail"
+                                    alt="1949 Bin the Cockpit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/99-Rock-Solid-Cttee.png" class="rounded img-thumbnail"
+                        alt="99 Rock 99-Rock-Solid-Cttee" data-bs-toggle="modal" data-bs-target="#Rock">
+                </div>
+                <!-- Rock Modal -->
+                <div class="modal fade" id="Rock" tabindex="-1" aria-labelledby="RockLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="RockLabel">Saskatchewan Union of Nurses Rock Solid
+                                    Leadership Bargaining Committee</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/99-Rock-Solid-Cttee.png" class="rounded img-thumbnail"
+                                    alt="1949 Bin the Cockpit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/ab_67-(5).png" class="rounded img-thumbnail" alt="ACH Supports UNA Strike"
+                        data-bs-toggle="modal" data-bs-target="#Strike">
+                </div>
+                <!-- Strike Modal -->
+                <div class="modal fade" id="Strike" tabindex="-1" aria-labelledby="StrikeLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="StrikeLabel">ACH Supports UNA strike</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/ab_67-(5).png" class="rounded img-thumbnail" alt="1949 Bin the Cockpit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3 align-self-center">
+                    <img src="/img/ab_67.png" class="rounded img-thumbnail" alt="Local 121 on strike"
+                        data-bs-toggle="modal" data-bs-target="#Local121Strike">
+                </div>
+                <!-- Local121Strike Modal -->
+                <div class="modal fade" id="Local121Strike" tabindex="-1" aria-labelledby="Local121StrikeLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="Local121StrikeLabel"> Local 121 Strike</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/ab_67.png" class="rounded img-thumbnail" alt="Local 121 on strike">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/BigSisterLittleSisterBanquet-StPaul.png" class="rounded img-thumbnail"
+                        alt="Big Sister Little Sister Banquet" data-bs-toggle="modal" data-bs-target="#SisterBanquet">
+                </div>
+                <!-- SisterBanquet Modal -->
+                <div class="modal fade" id="SisterBanquet" tabindex="-1" aria-labelledby="SisterBanquetLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="SisterBanquetLabel"> Big Sister Little Sister Banquet
+                                    in St Paul</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/BigSisterLittleSisterBanquet-StPaul.png" class="rounded img-thumbnail"
+                                    alt="Big Sister Little Sister Banquet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Clinical-16.png" class="rounded img-thumbnail" alt="Nurse in Pediatrics"
+                        data-bs-toggle="modal" data-bs-target="#Pedia">
+                </div>
+                <!-- Pedia Modal -->
+                <div class="modal fade" id="Pedia" tabindex="-1" aria-labelledby="PediaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="PediaLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Clinical-16.png" class="rounded img-thumbnail" alt="Nurse in Pediatrics">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/EA-77-1.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#Nurses">
+                </div>
+                <!-- Nurses Modal -->
+                <div class="modal fade" id="Nurses" tabindex="-1" aria-labelledby="NursesLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="NursesLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/EA-77-1.png" class="rounded img-thumbnail" alt="Nurse in Pediatrics">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3 align-self-center">
+                    <img src="/img/Leona-Donnan_grad-picture.png" class="rounded img-thumbnail"
+                        alt="Leona Donnan graduation picture" data-bs-toggle="modal" data-bs-target="#Leona">
+                </div>
+                <!-- Grad Modal -->
+                <div class="modal fade" id="Leona" tabindex="-1" aria-labelledby="LeonaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="LeonaLabel">Leona Donnan graduation picture</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Leona-Donnan_grad-picture.png" class="rounded img-thumbnail"
+                                    alt="Leona Donnan graduation picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/Miss-Mary-O’Hara-in-OR-office-at-StPauls.png" class="rounded img-thumbnail"
+                        alt="Miss Mary O'Hara in office at St Pauls" data-bs-toggle="modal" data-bs-target="#Miss">
+                </div>
+                <!-- Miss Modal -->
+                <div class="modal fade" id="Miss" tabindex="-1" aria-labelledby="MissLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="MissLabel">Miss Mary O'Hara in office at St Pauls</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Miss-Mary-O’Hara-in-OR-office-at-StPauls.png"
+                                    class="rounded img-thumbnail" alt="Miss Mary O'Hara in office at St Pauls">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Photo0004.bmpFinal-group-shot.png" class="rounded img-thumbnail"
+                        alt="Saskatchewan Air Ambulance 2002" data-bs-toggle="modal" data-bs-target="#Ambulance">
+                </div>
+                <!-- Ambulance Modal -->
+                <div class="modal fade" id="Ambulance" tabindex="-1" aria-labelledby="AmbulanceLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="AmbulanceLabel">Saskatcehwan Air Ambulance 2002</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Photo0004.bmpFinal-group-shot.png" class="rounded img-thumbnail"
+                                    alt="Saskatcehwan Air Ambulance 2002">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/R-A11308-4.png" class="rounded img-thumbnail"
+                        alt="Saskatcehwan Anti-Tuberculosis League" data-bs-toggle="modal" data-bs-target="#Sask">
+                </div>
+                <!-- Sask Modal -->
+                <div class="modal fade" id="Sask" tabindex="-1" aria-labelledby="SaskLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="SaskLabel">Saskatcehwan Anti-Tuberculosis League</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-A11308-4.png" class="rounded img-thumbnail"
+                                    alt="Saskatcehwan Anti-Tuberculosis League">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3 align-self-center">
+                    <img src="/img/R-B6249-3.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#TwoNurses">
+                </div>
+                <!-- Two Nurses Modal -->
+                <div class="modal fade" id="TwoNurses" tabindex="-1" aria-labelledby="TwoNursesLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="TwoNursesLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-B6249-3.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/R-B6249-5.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#NurseAssist">
+                </div>
+                <!-- Nurse Assisting Modal -->
+                <div class="modal fade" id="NurseAssist" tabindex="-1" aria-labelledby="NurseAssistLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="NurseAssistLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-B6249-5.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/R-PS11251.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#NurseChild">
+                </div>
+                <!-- Nurse and Child Modal -->
+                <div class="modal fade" id="NurseChild" tabindex="-1" aria-labelledby="NurseChildLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="NurseChildLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-PS11251.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Ruby_grad-picture-1900s.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#Ruby">
+                </div>
+                <!-- Grad photo Modal -->
+                <div class="modal fade" id="Ruby" tabindex="-1" aria-labelledby="NurseChildLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="NurseChildLabel">Graduation in 1900</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Ruby_grad-picture-1900s.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/SUN-billboard.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#sun">
+                </div>
+                <!-- SUN photo Modal -->
+                <div class="modal fade" id="sun" tabindex="-1" aria-labelledby="sunLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="sunLabel">SUN Billboard</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/SUN-billboard.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/99-Shoe-Campaign-6.png" class="rounded img-thumbnail" alt="Shoe Campaign" data-bs-toggle="modal"
+                        data-bs-target="#ShoeCampaign">
+                </div>
+                <!-- Shoe Campaign Modal -->
+                <div class="modal fade" id="ShoeCampaign" tabindex="-1" aria-labelledby="ShoeCampaignLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="ShoeCampaignLabel">Shoe Campaign</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/99-Shoe-Campaign-6.png" class="rounded img-thumbnail" alt="Shoe Campaign">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Clinical-7.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#Clinical">
+                </div>
+                <!-- Clinical Modal -->
+                <div class="modal fade" id="Clinical" tabindex="-1" aria-labelledby="ClinicalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="ClinicalLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Clinical-7.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Dressing-Room-1953.png" class="rounded img-thumbnail" alt="Dressing Room 1953" data-bs-toggle="modal"
+                        data-bs-target="#Dressing">
+                </div>
+                <!-- Dressing photo Modal -->
+                <div class="modal fade" id="Dressing" tabindex="-1" aria-labelledby="DressingLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="DressingLabel">Dressing Room in 1954. From Left to Right, L. Ushida, O. Keller, M. Holden</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Dressing-Room-1953.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/Eleanor_Lenderbeck_Kamsack_1956(15).png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#eleanor">
+                </div>
+                <!-- Elenor Modal -->
+                <div class="modal fade" id="eleanor" tabindex="-1" aria-labelledby="eleanorLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="eleanorLabel">Eleanor Lenderbeck Kamsack 1956</h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Eleanor_Lenderbeck_Kamsack_1956(15).png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md pb-3">
+                    <img src="/img/Clinical-15.png" class="rounded img-thumbnail" alt="Clinical 17" data-bs-toggle="modal"
+                        data-bs-target="#Clinical-17">
+                </div>
+                <!-- Clinical 17 Modal -->
+                <div class="modal fade" id="Clinical-17" tabindex="-1" aria-labelledby="Clinical-17Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="Clinical-17Label"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/Clinical-15.png" class="rounded img-thumbnail" alt="Clinical 17">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/R-B6249-1.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#TwoNursesPedia">
+                </div>
+                <!-- R-B6249-1 Modal -->
+                <div class="modal fade" id="TwoNursesPedia" tabindex="-1" aria-labelledby="TwoNursesPediaLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="TwoNursesPediaLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-B6249-1.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/R-B6249-4.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#SeniorCare">
+                </div>
+                <!-- SeniorCare Modal -->
+                <div class="modal fade" id="SeniorCare" tabindex="-1" aria-labelledby="SeniorCareLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="SeniorCareLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-B6249-4.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+                    <img src="/img/R-B7818-3.png" class="rounded img-thumbnail" alt="" data-bs-toggle="modal"
+                        data-bs-target="#PatientCare">
+                </div>
+                <!-- PatientCare Modal -->
+                <div class="modal fade" id="PatientCare" tabindex="-1" aria-labelledby="PatientCareLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-5" id="PatientCareLabel"></h6>
+                                <button type="button" class="btn-close justify-content-center" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/img/R-B7818-3.png" class="rounded img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
+
+
     {{>script}}
     {{>footer}}

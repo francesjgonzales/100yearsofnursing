@@ -1,0 +1,24 @@
+{{>header}}
+
+<body>
+  {{>navbar}}
+
+  <!-- Main Page -->
+  <div class="container p-5 bg-light">
+    {{>themeIntro}}
+    {{!-- Each articles is shown --}}
+    <div class="container">
+      {{>themeNav}}
+      <div class="row" id="evolutionofnursing"></div>
+      <div class="row" id="advocacynursing" style="display:none"></div>
+      <div class="row" id="nursesandunions" style="display:none"></div>
+      <div class="row" id="nursesInRural" style="display:none"></div>
+      <div class="row" id="nursesInWar" style="display:none"></div>
+      <div class="row" id="pioneeringNursing" style="display:none"></div>
+
+    </div>
+  </div>
+
+  {{>footer}}
+  {{>script}}
+  {{>themeDataFetch}}

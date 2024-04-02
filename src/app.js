@@ -3,8 +3,9 @@ require('dotenv').config() // .env
 const express = require('express')
 const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine
-const cors = require('cors'); //cross 
+const cors = require('cors'); //cross browser
 const favicon = require('serve-favicon')
+const base64 = require('base-64') //converting images to base-64
 
 // Define Route Path
 const timeline = require('../routes/timeline');
@@ -18,13 +19,15 @@ const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
+// Reload - FOR DEVELOPMENT
+app.set('port', process.env.PORT || 3000)
 
 // Initialize Socket.io server - FOR PRODUCTION
 io.on('connection', () => { console.log('new websocket connection') });
-server.listen(3000);
+server.listen('port');
 
 // Define Mongoose for database
-const port = process.env.PORT || 3000
+const portDb = process.env.PORT || 3000
 const MONGOURL = process.env.DATABASE_URL
 
 // Define Template Paths for Express config
@@ -68,14 +71,9 @@ app.get('/', (req, res) => {
 
 // 2. Timeline Page
 app.use('/timeline/', timeline)
-app.use('/theme', theme)
 
 // 3. Themes Page
-app.get('/theme', (req, res) => {
-    res.render('theme', {
-        title: 'Theme',
-    })
-})
+app.use('/theme', theme)
 
 // 4. Photos Page
 app.get('/photos', (req, res) => {
@@ -112,8 +110,8 @@ mongoose.connect(MONGOURL)
         console.log('Mongoose Connected!')
         //start up server
         app.listen(//Set up reload 
-            app.set(port), () => {
-                console.log(`Server up in port ${port}.`)
+            app.set(portDb), () => {
+                console.log(`Server up in port ${portDb}.`)
             })
     }).catch((error) => {
         console.log(error);
@@ -126,12 +124,12 @@ mongoose.connect(MONGOURL)
     // reloadReturned is documented in the returns API in the README
 
     // Reload started, start web server
-    server.listen(app.get(port), () => {
-        console.log('Web server listening on port ' + app.get(port))
+    server.listen(app.get('port'), () => {
+        console.log('Web server listening on port ' + app.get('port'))
     })
 }).catch((err) => {
     // res.status(500)
     // throw new Error(error.message)
     console.error('Reload could not start, could not start app.js', err)
-}) */
-
+})
+ */

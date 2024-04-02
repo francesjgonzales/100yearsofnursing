@@ -58,3 +58,11 @@ Create new branch - `git checkout -b ＜new-branch＞`
 1. **Package.json** Add script `"start": "nodemon src/app.js -e html,hs,hbs reload",`
 2. **app.js** comment or delete `const reload = require('reload')`
 3. **.env** change `production` to `development`
+
+## Debugging
+
+1. [EADDRINUSE](https://dev.to/keoshaug/error-listen-eaddrinuse-address-already-in-use-json-548f) - `npx kill-port (portName)`
+
+## Image upload
+
+(https://www.geeksforgeeks.org/upload-and-retrieve-image-on-mongodb-using-mongoose/)

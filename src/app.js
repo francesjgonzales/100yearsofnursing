@@ -5,7 +5,6 @@ const path = require('path') // Express.js
 const hbs = require('hbs') // Express-hbs template engine
 const cors = require('cors'); //cross browser
 const favicon = require('serve-favicon')
-const base64 = require('base-64') //converting images to base-64
 
 // Define Route Path
 const timeline = require('../routes/timeline');
@@ -20,14 +19,14 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 // Reload - FOR DEVELOPMENT
-app.set('port', process.env.PORT || 3000)
+/* app.set('port', process.env.PORT || 3000) */
 
 // Initialize Socket.io server - FOR PRODUCTION
 io.on('connection', () => { console.log('new websocket connection') });
-server.listen('port');
+server.listen(3000);
 
 // Define Mongoose for database
-const portDb = process.env.PORT || 3000
+const portDb = process.env.PORT || 4000
 const MONGOURL = process.env.DATABASE_URL
 
 // Define Template Paths for Express config

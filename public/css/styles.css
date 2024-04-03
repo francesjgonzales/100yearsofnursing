@@ -84,7 +84,6 @@ hr.rounded {
 
 .card {
   border-color: #3e8e41 !important;
-  width: 18rem !important;
 }
 /* END article */
 
@@ -110,14 +109,13 @@ hr.rounded {
   .carousel-inner .carousel-item > div:nth-child(-n + 2) {
     display: block;
   }
-  .vertical-line {
+  /* .vertical-line {
     border-left: 2px solid green;
     height: 790vh;
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    /* top: 0; */
-  }
+  } */
   /* .container {
     max-width: 1200px !important;
   } */

@@ -23,7 +23,7 @@ const io = require('socket.io')(server);
 
 // Initialize Socket.io server - FOR PRODUCTION
 io.on('connection', () => { console.log('new websocket connection') });
-server.listen(3000);
+server.listen(3000, console.log('Express in port 3000'));
 
 // Define Mongoose for database
 const portDb = process.env.PORT || 4000
@@ -106,11 +106,10 @@ const mongoose = require('mongoose');
 
 mongoose.connect(MONGOURL)
     .then(() => {
-        console.log('Mongoose Connected!')
         //start up server
         app.listen(//Set up reload 
             app.set(portDb), () => {
-                console.log(`Server up in port ${portDb}.`)
+                console.log(`Mongoose Database Server up in port ${portDb}.`)
             })
     }).catch((error) => {
         console.log(error);

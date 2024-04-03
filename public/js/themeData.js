@@ -1,7 +1,7 @@
 // fetch api
-/*const endpoints = [
-  "http://localhost:3000/api/alberta",
-  "http://localhost:3000/api/saskatchewan",
+const endpoints = [
+  "https://one00yearsofnursing.onrender.com/api/alberta",
+  "https://one00yearsofnursing.onrender.com/api/saskatchewan",
 ];
 
 //START Get all response for Alberta and Saskatchewan
@@ -26,7 +26,7 @@ axios
         return true;
       }
     });
-    console.log(pioneerNursing);
+    /* console.log(pioneerNursing); */
 
     let pioneerNursingArticles = pioneerNursing
       .map((filterPioneerArticles) => {
@@ -36,7 +36,7 @@ axios
         <h6 class="card-subtitle mb-2 card-header">${filterPioneerArticles.theme}</h6>
             <h5 class="card-title text-success">${filterPioneerArticles.title}</h5>
             <p class="text-truncated">${filterPioneerArticles.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${filterPioneerArticles.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${filterPioneerArticles.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${filterPioneerArticles.article}
+                <h5 class="lh-base" style="font-weight:300">${filterPioneerArticles.article}</h5>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -73,7 +73,7 @@ axios
         return true;
       }
     });
-    console.log(filterNursesinWar);
+    /* console.log(filterNursesinWar); */
 
 
     let filterAllNuresInWar = filterNursesinWar
@@ -84,7 +84,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${nursesArticles.theme}</h6>
             <h5 class="card-title text-success">${nursesArticles.title}</h5>
             <p class="text-truncated">${nursesArticles.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${nursesArticles.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${nursesArticles.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -97,7 +97,7 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${nursesArticles.article}
+              <h5 class="lh-base" style="font-weight:300">${nursesArticles.article}</h5>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -130,7 +130,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${articleNurseRural.theme}</h6>
             <h5 class="card-title">${articleNurseRural.title}</h5>
             <p class="text-truncated">${articleNurseRural.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articleNurseRural.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articleNurseRural.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -143,7 +143,7 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articleNurseRural.article}
+              <h5 class="lh-base" style="font-weight:300">${articleNurseRural.article}</h5>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -176,7 +176,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${articleNursesUnion.theme}</h6>
             <h5 class="card-title text-success">${articleNursesUnion.title}</h5>
             <p class="text-truncated">${articleNursesUnion.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articleNursesUnion.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articleNursesUnion.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -189,7 +189,8 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articleNursesUnion.article}
+              <h5 class="lh-base" style="font-weight:300">${articleNursesUnion.article}</h5>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -221,7 +222,7 @@ axios
             <h5 class="card-title">${articlesAdvocacyNursing.title}</h5>
             <h6 class="card-subtitle mb-2">${articlesAdvocacyNursing.year}</h6>
             <p class="text-truncated">${articlesAdvocacyNursing.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articlesAdvocacyNursing.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articlesAdvocacyNursing.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -234,7 +235,8 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articlesAdvocacyNursing.article}
+              <h5 class="lh-base" style="font-weight:300">${articlesAdvocacyNursing.article}</h5>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -266,7 +268,7 @@ axios
               <h6 class="card-subtitle card-header mb-2">${articlesEvolutionNursing.theme}</h6>
                 <h5 class="card-title text-success">${articlesEvolutionNursing.title}</h5>
                 <p class="text-truncated">${articlesEvolutionNursing.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articlesEvolutionNursing.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articlesEvolutionNursing.id}" type="button">Read More</a>
               </div>
             </div>
 
@@ -279,7 +281,9 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articlesEvolutionNursing.article}
+                  <h5 class="lh-base" style="font-weight:300">
+                  ${articlesEvolutionNursing.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -311,7 +315,7 @@ axios
               <h6 class="card-subtitle card-header mb-2">${articlesPeopleWhoCare.theme}</h6>
                 <h5 class="card-title text-success">${articlesPeopleWhoCare.title}</h5>
                 <p class="text-truncated">${articlesPeopleWhoCare.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articlesPeopleWhoCare.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articlesPeopleWhoCare.id}" type="button">Read More</a>
               </div>
             </div>
 
@@ -324,7 +328,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articlesPeopleWhoCare.article}
+                  <h5 class="lh-base" style="font-weight:300">${articlesPeopleWhoCare.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -347,7 +352,7 @@ axios
         return true;
       }
     });
-    console.log(filterOtherThemes)
+    /* console.log(filterOtherThemes) */
 
     let filterOtherThemeArticles = filterOtherThemes
       .map((articlesOtherThemes) => {
@@ -356,7 +361,7 @@ axios
               <div class="card-body">
                 <h5 class="card-title text-success">${articlesOtherThemes.title}</h5>
                 <p class="text-truncated">${articlesOtherThemes.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articlesOtherThemes.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articlesOtherThemes.id}" type="button">Read More</a>
               </div>
             </div>
 
@@ -369,7 +374,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articlesOtherThemes.article}
+                  <h5 class="lh-base" style="font-weight:300">${articlesOtherThemes.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -399,6 +405,6 @@ axios
       console.log("Status Error Message:", error.response.status);
       console.log("Headers Error Message:", error.response.headers);
     }
-  });*/
+  });
 
 // END Axios Response

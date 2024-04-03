@@ -26,7 +26,7 @@ axios
         return true;
       }
     });
-    console.log(filterPre1900);
+    /* console.log(filterPre1900); */
 
     let filterPre1900Articles = filterPre1900
       .map((pre1900articles) => {
@@ -49,7 +49,7 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${pre1900articles.article}
+              <h5 class="lh-base" style="font-weight:300">${pre1900articles.article}</h5>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -72,7 +72,7 @@ axios
         return true;
       }
     });
-    console.log(filter1900);
+    /* console.log(filter1900); */
 
     let filter1900Articles = filter1900
       .map((articles1900) => {
@@ -95,7 +95,7 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articles1900.article}
+              <h5 class="lh-base" style="font-weight:300">${articles1900.article}</h5>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -118,7 +118,7 @@ axios
         return true;
       }
     });
-    console.log(filter1910);
+    /* console.log(filter1910); */
 
     let filter1910Articles = filter1910
       .map((articles1910) => {
@@ -141,7 +141,8 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articles1910.article}
+              <h5 class="lh-base" style="font-weight:300">${articles1910.article}</h5>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -164,7 +165,7 @@ axios
         return true;
       }
     });
-    console.log(filter1920);
+    /* console.log(filter1920); */
 
     let filter1920Articles = filter1920
       .map((articles1920) => {
@@ -187,7 +188,8 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articles1920.article}
+              <h5 class="lh-base" style="font-weight:300">${articles1920.article}</h5>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -210,15 +212,15 @@ axios
         return true;
       }
     });
-    console.log(filter1930);
+    /* console.log(filter1930); */
 
     let filter1930Articles = filter1930
       .map((articles1930) => {
         return `
         <div class="card m-3" style="width: 20rem;">
           <div class="card-body">
+          <h6 class="card-subtitle mb-2 card-header">${articles1930.year}</h6>
             <h5 class="card-title">${articles1930.title}</h5>
-            <h6 class="card-subtitle mb-2">${articles1930.year}</h6>
             <p class="text-truncated">${articles1930.article}</p>
             <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1930.id}" type="button">Read More</a>
           </div>
@@ -233,7 +235,8 @@ axios
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ${articles1930.article}
+              <h5 class="lh-base" style="font-weight:300">${articles1930.article}</h5>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -256,7 +259,7 @@ axios
         return true;
       }
     });
-    console.log(filter1930);
+    /* console.log(filter1930); */
 
     let filter1940Articles = filter1940
       .map((articles1940) => {
@@ -279,7 +282,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1940.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1940.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -302,14 +306,14 @@ axios
         return true;
       }
     });
-    console.log(filter1950);
+    /* console.log(filter1950); */
 
     let filter1950Articles = filter1950
       .map((articles1950) => {
         return `
             <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
-              <h6 class="card-subtitle mb-2">${articles1950.year}</h6>
+              <h6 class="card-subtitle mb-2 card-header">${articles1950.year}</h6>
                 <h5 class="card-title text-success">${articles1950.title}</h5>
                 <p class="text-truncated">${articles1950.article}</p>
                 <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1950.id}" type="button">Read More</a>
@@ -325,7 +329,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1950.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1950.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -348,7 +353,7 @@ axios
         return true;
       }
     });
-    console.log(filter1960);
+    /* console.log(filter1960); */
 
     let filter1960Articles = filter1960
       .map((articles1960) => {
@@ -371,7 +376,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1960.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1960.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -394,15 +400,15 @@ axios
         return true;
       }
     });
-    console.log(filter1970);
+    /* console.log(filter1970); */
 
     let filter1970Articles = filter1970
       .map((articles1970) => {
         return `
             <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
+              <h6 class="card-subtitle mb-2 card-header">${articles1970.year}</h6>
                 <h5 class="card-title">${articles1970.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1970.year}</h6>
                 <p class="text-truncated">${articles1970.article}</p>
                 <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1970.id}" type="button">Read More</a>
               </div>
@@ -417,7 +423,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1970.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1970.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -440,15 +447,15 @@ axios
         return true;
       }
     });
-    console.log(filter1980);
+    /* console.log(filter1980); */
 
     let filter1980Articles = filter1980
       .map((articles1980) => {
         return `
             <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
+              <h6 class="card-subtitle card-header mb-2">${articles1980.year}</h6>
                 <h5 class="card-title">${articles1980.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1980.year}</h6>
                 <p class="text-truncated">${articles1980.article}</p>
                 <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1980.id}" type="button">Read More</a>
               </div>
@@ -463,7 +470,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1980.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1980.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -486,15 +494,15 @@ axios
         return true;
       }
     });
-    console.log(filter1990);
+    /* console.log(filter1990); */
 
     let filter1990Articles = filter1990
       .map((articles1990) => {
         return `
             <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
+              <h6 class="card-subtitle mb-2 card-header">${articles1990.year}</h6>
                 <h5 class="card-title">${articles1990.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles1990.year}</h6>
                 <p class="text-truncated">${articles1990.article}</p>
                 <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1990.id}" type="button">Read More</a>
               </div>
@@ -509,7 +517,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles1990.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles1990.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -532,15 +541,15 @@ axios
         return true;
       }
     });
-    console.log(filter2000);
+    /* console.log(filter2000); */
 
     let filter2000Articles = filter2000
       .map((articles2000) => {
         return `
             <div class="card m-3" style="width: 20rem;">
               <div class="card-body">
+              <h6 class="card-subtitle mb-2 card-header">${articles2000.year}</h6>
                 <h5 class="card-title">${articles2000.title}</h5>
-                <h6 class="card-subtitle mb-2">${articles2000.year}</h6>
                 <p class="text-truncated">${articles2000.article}</p>
                 <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles2000.id}" type="button">Read More</a>
               </div>
@@ -555,7 +564,8 @@ axios
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ${articles2000.article}
+                  <h5 class="lh-base" style="font-weight:300">${articles2000.article}</h5>
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -109,7 +109,7 @@ mongoose.connect(MONGOURL)
         //start up server
         app.listen(//Set up reload 
             app.set(portDb), () => {
-                console.log(`Mongoose Database Server up in port ${portDb}.`)
+                console.log(`Mongoose Server up in port ${portDb}.`)
             })
     }).catch((error) => {
         console.log(error);

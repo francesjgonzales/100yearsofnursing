@@ -36,7 +36,7 @@ axios
         <h6 class="card-subtitle mb-2 card-header">${pre1900articles.year}</h6>
             <h5 class="card-title text-success">${pre1900articles.title}</h5>
             <p class="text-truncated">${pre1900articles.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${pre1900articles.id}" type="button">Read More</a>
+            <a class="card-link text-success text-success" data-bs-toggle="modal" data-bs-target="#${pre1900articles.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${articles1900.year}</h6>
             <h5 class="card-title text-success">${articles1900.title}</h5>
             <p class="text-truncated">${articles1900.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1900.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1900.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -128,7 +128,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${articles1910.year}</h6>
             <h5 class="card-title">${articles1910.title}</h5>
             <p class="text-truncated">${articles1910.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1910.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1910.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -174,7 +174,7 @@ axios
           <h6 class="card-subtitle card-header mb-2">${articles1920.year}</h6>
             <h5 class="card-title text-success">${articles1920.title}</h5>
             <p class="text-truncated">${articles1920.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1920.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1920.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -220,7 +220,7 @@ axios
             <h5 class="card-title">${articles1930.title}</h5>
             <h6 class="card-subtitle mb-2">${articles1930.year}</h6>
             <p class="text-truncated">${articles1930.article}</p>
-            <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1930.id}" type="button">Read More</a>
+            <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1930.id}" type="button">Read More</a>
           </div>
         </div>
 
@@ -266,7 +266,7 @@ axios
               <h6 class="card-subtitle card-header mb-2">${articles1940.year}</h6>
                 <h5 class="card-title text-success">${articles1940.title}</h5>
                 <p class="text-truncated">${articles1940.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1940.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1940.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -312,7 +312,7 @@ axios
               <h6 class="card-subtitle mb-2">${articles1950.year}</h6>
                 <h5 class="card-title text-success">${articles1950.title}</h5>
                 <p class="text-truncated">${articles1950.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1950.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1950.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -358,7 +358,7 @@ axios
               <h6 class="card-subtitle card-header mb-2">${articles1960.year}</h6>
                 <h5 class="card-title">${articles1960.title}</h5>
                 <p class="text-truncated">${articles1960.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1960.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1960.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -404,7 +404,7 @@ axios
                 <h5 class="card-title">${articles1970.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1970.year}</h6>
                 <p class="text-truncated">${articles1970.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1970.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1970.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -450,7 +450,7 @@ axios
                 <h5 class="card-title">${articles1980.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1980.year}</h6>
                 <p class="text-truncated">${articles1980.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1980.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1980.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -496,7 +496,7 @@ axios
                 <h5 class="card-title">${articles1990.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles1990.year}</h6>
                 <p class="text-truncated">${articles1990.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles1990.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles1990.id}" type="button">Read More</a>
               </div>
             </div>
     
@@ -542,7 +542,7 @@ axios
                 <h5 class="card-title">${articles2000.title}</h5>
                 <h6 class="card-subtitle mb-2">${articles2000.year}</h6>
                 <p class="text-truncated">${articles2000.article}</p>
-                <a class="card-link" data-bs-toggle="modal" data-bs-target="#${articles2000.id}" type="button">Read More</a>
+                <a class="card-link text-success" data-bs-toggle="modal" data-bs-target="#${articles2000.id}" type="button">Read More</a>
               </div>
             </div>
     

@@ -1,7 +1,7 @@
 {{>header}}
 
 <body>
-  {{>navbar}}
+    {{>navbar}}
 
     <!-- Main Page -->
     <div class="container p-5 bg-light">
@@ -9,107 +9,717 @@
             <h1 class="text-success">{{title}}</h1>
         </div>
         <div class="container">
-        <h5 class="lh-base" style="font-weight:300">Browse the history of nursing in Saskatchewan and Alberta by timeline.</h5>
-      </div>
+            <h5 class="lh-base" style="font-weight:300">Browse the history of nursing in Saskatchewan and Alberta by
+                timeline.</h5>
+        </div>
 
         {{!-- All Videos --}}
         <div class="container mt-5">
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">Pre 1900's</h5>
                 <div class="col-md pb-3">
-                <h4>Grey Nuns bring European nursing to the prairies</h4>
+                    <h4>Grey Nuns bring European nursing to the prairies</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
 
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">1900's</h5>
+
                 <div class="col-md pb-3">
-                <h4>Surviving typhoid and extreme conditions: Mary Ellen Birtles</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                    <img src="/img/Surviving-Typhoon-small.png" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#Surviving" alt="Surviving typhoid and extreme conditions: Mary Ellen Birtles">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="mt-3 btn bg-success text-light" style="width: 350px;"
+                        data-bs-toggle="modal" data-bs-target="#Surviving">
+                        <p>Surviving typhoid and extreme conditions: Mary Ellen Birtles</p>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Surviving" tabindex="-1" aria-labelledby="SurvivingLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="SurvivingLabel">Surviving typhoid and extreme
+                                        conditions: Mary Ellen Birtles</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/YvhxrMKoNwM?si=WUKZL7klHAK2zrUm"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md pb-3">
-                <h4>Victorian Order of Nurses: decades of in-home care</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                    <div class="col">
+                        <img src="/img/Victorian-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Victorian" alt="Victorian Order of Nurses: decades of in-home care<">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Victorian" style="width: 350px;">
+                            <p>Victorian Order of Nurses: decades of in-home care</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Victorian" tabindex="-1" aria-labelledby="VictorianLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="VictorianLabel">Victorian Order of Nurses: decades of
+                                        in-home care</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/hv3SmLnPEBY?si=I75ifz-v334FUZn-"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center mt-5">
                 <h5 class="text-success">1910's</h5>
                 <div class="col-md pb-3">
-                <h4>Prairie nurses go overseas in World War I</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                    <div class="col">
+                        <img src="/img/Prairie-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Prairie" alt="Prairie nurses go overseas in World War I<">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Prairie" style="width: 350px;">
+                            <p>Prairie nurses go overseas in World War I</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Prairie" tabindex="-1" aria-labelledby="PrairieLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="PrairieLabel">Prairie nurses go overseas in World War I
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/XFUygJ7jVCE?si=gFNYC_GiB51lzC8l"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+
+                    <div class="col">
+                        <img src="/img/Roberta-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Roberta"
+                            alt="Roberta MacAdams - second woman elected to a Commonwealth Legislature<">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Roberta" style="width: 350px;">
+                            <p>Roberta MacAdams - second woman elected to a Commonwealth Legislature</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Roberta" tabindex="-1" aria-labelledby="RobertaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="RobertaLabel">Roberta MacAdams - second woman elected to
+                                        a Commonwealth Legislature</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/ivKODkwDYSo?si=zRUDJTqU60wMUG7k"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>Roberta MacAdams - second woman elected to a Commonwealth Legislature</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
-                </div>
-                <div class="col-md pb-3">
-                <h4>The 1918 Flu Epidemic</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/Flu1918-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Flu1918" alt="The 1918 Flu Epidemic<">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Flu1918" style="width: 350px;">
+                            <p>The 1918 Flu Epidemic</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Flu1918" tabindex="-1" aria-labelledby="Flu1918Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Flu1918Label">The 1918 Flu Epidemic</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/zJpA7aoluu4?si=ISs0NpCwVmsx4vDg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center mt-5">
                 <h5 class="text-success">1920's</h5>
                 <div class="col-md pb-3">
-                <h4>District Nurse Travels to Tragedy</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                    <div class="col">
+                        <img src="/img/District-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#District" alt="District Nurse Travels to Tragedy">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#District" style="width: 350px;">
+                            <p>District Nurse Travels to Tragedy</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="District" tabindex="-1" aria-labelledby="DistrictLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="DistrictLabel">District Nurse Travels to Tragedy</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/MnZAdWzanMQ?si=vbzkUOrXtiq2GNLl"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+
+                    <div class="col">
+                        <img src="/img/Student-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Student" alt="Student Nurses Defiantly 'bob' Hair">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Student" style="width: 350px;">
+                            <p>Student Nurses Defiantly "bob" Hair</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Student" tabindex="-1" aria-labelledby="StudentLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="StudentLabel">Student Nurses Defiantly "bob" Hair</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/-EmdokrDGKc?si=Qj8BNsE5maHD4BzU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md pb-3">
+
+                    <div class="col">
+                        <img src="/img/Red-small.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#Red"
+                            alt="Red Cross: nurses in a changing role">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Red" style="width: 350px;">
+                            <p>Red Cross: nurses in a changing role</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Red" tabindex="-1" aria-labelledby="RedLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="RedLabel">Red Cross: nurses in a changing role</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/KWj4MJX5oGE?si=-SzKM9z-Fh4oX6zk"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>Student Nurses Defiantly "bob" Hair</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/NursesUniform-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#NurseUniform" alt="Nurses Uniforms: Bibs, Collars and Caps">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#NurseUniform" style="width: 350px;">
+                            <p>Nurses Uniforms: Bibs, Collars and Caps</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="NurseUniform" tabindex="-1" aria-labelledby="NurseUniformLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NurseUniformLabel">Nurses Uniforms: Bibs, Collars and
+                                        Caps</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/RzKikYjel6Q?si=_lgbIkD5WNeR4VDB"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>Red Cross: nurses in a changing role</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                    <div class="col">
+                        <img src="/img/Public-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Public" alt="Public Health Nurses">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Public" style="width: 350px;">
+                            <p>Public Health Nurses</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Public" tabindex="-1" aria-labelledby="PublicLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="PublicLabel">Public Health Nurses</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/mM0LRQ3TUig?si=nmoxNs03LkceEyBh"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses Uniforms: Bibs, Collars and Caps</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
-                </div>
-                <div class="col-md pb-3">
-                <h4>Public Health Nurses</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
-                </div>
-                <div class="col-md pb-3">
-                <h4>The Changing Practice of Nursing</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/Changing-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Changing" alt="The Changing Practice of Nursing">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Changing" style="width: 350px;">
+                            <p>The Changing Practice of Nursing</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Changing" tabindex="-1" aria-labelledby="ChangingLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ChangingLabel">The Changing Practice of Nursing</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/k43TGdSU_5A?si=JzdyhgBKRnWHct38"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center mt-5">
                 <h5 class="text-success">1930's</h5>
                 <div class="col-md pb-3">
-                <h4>Nurses help out in the “Dirty 30s”</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/Nurses30s-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Nurses30s" alt=">Nurses help out in the “Dirty 30s”">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Nurses30s" style="width: 350px;">
+                            <p>Nurses help out in the “Dirty 30s”</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Nurses30s" tabindex="-1" aria-labelledby="Nurses30sLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Nurses30sLabel">Nurses help out in the “Dirty 30s”</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/cgrl-x2T3V4?si=oDQdxR2PXtmHofuM"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Student nurses work long hours</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/LongHours-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#LongHours" alt=">Student nurses work long hours">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#LongHours" style="width: 350px;">
+                            <p>Student nurses work long hours</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="LongHours" tabindex="-1" aria-labelledby="LongHoursLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="LongHoursLabel">Student nurses work long hours</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/7oO7NhZeI1g?si=RYQu1MLNg_0NQTcG"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center mt-5">
                 <h5 class="text-success">1940's</h5>
                 <div class="col-md pb-3">
-                <h4>Prairie nurses in World War II</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+                    <div class="col">
+                        <img src="/img/PrairieWWIILabel-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#PrairieWWII" alt=">Prairie nurses in World War II">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#PrairieWWII" style="width: 350px;">
+                            <p>Prairie nurses in World War II</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="PrairieWWII" tabindex="-1" aria-labelledby="PrairieWWIILabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="PrairieWWIILabel">Prairie nurses in World War II</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660"
+                                        src="https://www.youtube.com/embed/d2jjnnv7cb0?si=4NUYggycbE_M3lrA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md pb-3">
+
+                    <div class="col">
+                        <img src="/img/Northern-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Northern" alt=">The Northern Nurse">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Northern" style="width: 350px;">
+                            <p>The Northern Nurse</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Northern" tabindex="-1" aria-labelledby="NorthernLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NorthernLabel">The Northern Nurse</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/7-7dEKST4Nk?si=h9pI6i_TP1R9c33v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>The Northern Nurse</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+
+
+                    <div class="col">
+                        <img src="/img/Tommy-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#Tommy" alt="Tommy Douglas TV announcement of first medicare plan">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#Tommy" style="width: 350px;">
+                            <p>Tommy Douglas TV announcement of first medicare plan</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Tommy" tabindex="-1" aria-labelledby="TommyLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="TommyLabel">Tommy Douglas TV announcement of first medicare plan</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/7-7dEKST4Nk?si=h9pI6i_TP1R9c33v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+             
                 </div>
                 <div class="col-md pb-3">
-                <h4>Tommy Douglas TV announcement of first medicare plan</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+       <div class="col">
+                        <img src="/img/SaskatchewanAmbulance-small.png" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#SaskatchewanAmbulance" alt="Saskatchewan Air Ambulance: from the fields and forest">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
+                            data-bs-target="#SaskatchewanAmbulance" style="width: 350px;">
+                            <p>Saskatchewan Air Ambulance: from the fields and forest</p>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="SaskatchewanAmbulance" tabindex="-1" aria-labelledby="SaskatchewanAmbulanceLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="SaskatchewanAmbulanceLabel">Saskatchewan Air Ambulance: from the fields and forest</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/vzfahnj9GTQ?si=0yZqvzYJ1KazK7aT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="col-md pb-3">
-                <h4>Saskatchewan Air Ambulance: from the fields and forest</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
-                </div>
-                <div class="col-md pb-3">
-                <h4>Tuberculosis and the need for lengthy care in sanitoriums</h4>
+                    <h4>Tuberculosis and the need for lengthy care in sanitoriums</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -117,27 +727,27 @@
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">1950's</h5>
                 <div class="col-md pb-3">
-                <h4>A District Nurse's Story</h4>
+                    <h4>A District Nurse's Story</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Contributions of Immigrant Nurses</h4>
+                    <h4>Contributions of Immigrant Nurses</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Life in residence: early nursing schools</h4>
+                    <h4>Life in residence: early nursing schools</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>The Dreaded Polio and the Iron Lung</h4>
+                    <h4>The Dreaded Polio and the Iron Lung</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>The Specialness of Psychiatric Nursing</h4>
+                    <h4>The Specialness of Psychiatric Nursing</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Why we Became Nurses</h4>
+                    <h4>Why we Became Nurses</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -145,27 +755,27 @@
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">1970's</h5>
                 <div class="col-md pb-3">
-                <h4>Founding a union for nurses: the United Nurses of Alberta</h4>
+                    <h4>Founding a union for nurses: the United Nurses of Alberta</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>The 1977 nurses' strike in Alberta</h4>
+                    <h4>The 1977 nurses' strike in Alberta</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>The Staff Nurses' Association of Alberta</h4>
+                    <h4>The Staff Nurses' Association of Alberta</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Advocating for Patients</h4>
+                    <h4>Advocating for Patients</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Formation of the Saskatchewan Union of Nurses</h4>
+                    <h4>Formation of the Saskatchewan Union of Nurses</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>The Nurses' oath</h4>
+                    <h4>The Nurses' oath</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -173,15 +783,15 @@
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">1980's</h5>
                 <div class="col-md pb-3">
-                <h4>The 1980 &amp; 1982 nurses' strikes in Alberta</h4>
+                    <h4>The 1980 &amp; 1982 nurses' strikes in Alberta</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses defy with illegal strike in 1988</h4>
+                    <h4>Nurses defy with illegal strike in 1988</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses Strike to Protect their Patients' care</h4>
+                    <h4>Nurses Strike to Protect their Patients' care</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -189,23 +799,23 @@
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">1990's</h5>
                 <div class="col-md pb-3">
-                <h4>Alberta makes dramatic health cuts in the 1990s</h4>
+                    <h4>Alberta makes dramatic health cuts in the 1990s</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses impacted dramatically by cuts</h4>
+                    <h4>Nurses impacted dramatically by cuts</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Fun on the floor: nurses break the tension</h4>
+                    <h4>Fun on the floor: nurses break the tension</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Saskatchewan nurses strike in 1999</h4>
+                    <h4>Saskatchewan nurses strike in 1999</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses Dramatize crisis with "shoe-in"</h4>
+                    <h4>Nurses Dramatize crisis with "shoe-in"</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -213,27 +823,27 @@
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">2000's</h5>
                 <div class="col-md pb-3">
-                <h4>Caring for the Disabled and Elderly</h4>
+                    <h4>Caring for the Disabled and Elderly</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Nurses in the workplace at the Great Western Garment Company</h4>
+                    <h4>Nurses in the workplace at the Great Western Garment Company</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Never Enough Time</h4>
+                    <h4>Never Enough Time</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Protecting Caregivers: Health and Safety</h4>
+                    <h4>Protecting Caregivers: Health and Safety</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>First Nations Nursing</h4>
+                    <h4>First Nations Nursing</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
                 <div class="col-md pb-3">
-                <h4>Saskatchewan Air Ambulance today</h4>
+                    <h4>Saskatchewan Air Ambulance today</h4>
                     <video src="..." class="object-fit-none" autoplay></video>
                 </div>
             </div>
@@ -241,5 +851,5 @@
     </div>
 
 
-  {{>script}}
-  {{>footer}}
+    {{>script}}
+    {{>footer}}

@@ -15,3 +15,16 @@ items.forEach((el) => {
   }
 });
 
+// Get all elements with the class "modal"
+const modals = document.querySelectorAll('.modal');
+
+// Iterate over each modal
+modals.forEach(modal => {
+  // Add an event listener for the "hide.bs.modal" event
+  modal.addEventListener('hide.bs.modal', () => {
+    // Store the current content of the modal
+    const memory = modal.innerHTML;
+    // Set the content of the modal to the stored memory
+    modal.innerHTML = memory;
+  });
+});

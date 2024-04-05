@@ -52,6 +52,8 @@
 ## Git
 
 Create new branch - `git checkout -b ＜new-branch＞`
+Switch branch - `git checkout <branch-name>`
+Update branch in local env - `git pull`
 
 ## Development
 

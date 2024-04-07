@@ -10,31 +10,52 @@
         </div>
         <div class="container">
             <h5 class="lh-base" style="font-weight:300">Browse the history of nursing in Saskatchewan and Alberta by
-                timeline.</h5>
+                timeline. </h5>
         </div>
 
         {{!-- All Videos --}}
         <div class="container mt-5">
             <div class="row text-center justify-content-center">
                 <h5 class="text-success">Pre 1900's</h5>
-                <div class="col-md pb-3">
-                    <h4>Grey Nuns bring European nursing to the prairies</h4>
-                    <video src="..." class="object-fit-none" autoplay></video>
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Grey Nuns bring European nursing to the prairies</h4>
+                            <a href="#" class="btn btn-success text-light">Play Video <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1900's</h5>
 
-                <div class="col-md pb-3">
-                    <img src="/img/Surviving-Typhoon-small.png" class="img-fluid" data-bs-toggle="modal"
-                        data-bs-target="#Surviving" alt="Surviving typhoid and extreme conditions: Mary Ellen Birtles">
+                {{!-- Surviving typhoid and extreme conditions: Mary Ellen Birtles --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/YvhxrMKoNwM/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Surviving"
+                            alt="Surviving typhoid and extreme conditions: Mary Ellen Birtles">
+                        <div class="card-body">
+                            <h4>Surviving typhoid and extreme conditions: Mary Ellen Birtles</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Surviving">Watch Video <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-play-circle"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="mt-3 btn bg-success text-light" style="width: 350px;"
-                        data-bs-toggle="modal" data-bs-target="#Surviving">
-                        <p>Surviving typhoid and extreme conditions: Mary Ellen Birtles</p>
-                    </button>
                     <!-- Modal -->
                     <div class="modal fade" id="Surviving" tabindex="-1" aria-labelledby="SurvivingLabel"
                         aria-hidden="true">
@@ -47,11 +68,12 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/YvhxrMKoNwM?si=WUKZL7klHAK2zrUm"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/YvhxrMKoNwM?si=ivNp74PCy28QxdmK"
+                                        title="Surviving" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -62,16 +84,22 @@
                     </div>
                 </div>
 
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Victorian-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Victorian" alt="Victorian Order of Nurses: decades of in-home care<">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Victorian" style="width: 350px;">
-                            <p>Victorian Order of Nurses: decades of in-home care</p>
-                        </button>
+                {{!-- Victorian Order of Nurses: decades of in-home care --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/hv3SmLnPEBY/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Victorian" alt="Victorian Order of Nurses: decades of in-home care">
+                        <div class="card-body">
+                            <h4>Victorian Order of Nurses: decades of in-home care</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Victorian">Watch Video <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-play-circle"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -86,9 +114,9 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/hv3SmLnPEBY?si=I75ifz-v334FUZn-"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/hv3SmLnPEBY" title="Victorian"
+                                        frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
@@ -102,18 +130,24 @@
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1910's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Prairie-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Prairie" alt="Prairie nurses go overseas in World War I<">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Prairie" style="width: 350px;">
-                            <p>Prairie nurses go overseas in World War I</p>
-                        </button>
+                {{!-- Prairie nurses go overseas in World War I --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/XFUygJ7jVCE/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Prairie" alt="Prairie nurses go overseas in World War I">
+                        <div class="card-body">
+                            <h4>Prairie nurses go overseas in World War I</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Prairie">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -128,13 +162,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/XFUygJ7jVCE?si=gFNYC_GiB51lzC8l"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/XFUygJ7jVCE" title="Prairie" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -145,18 +176,22 @@
                     </div>
                 </div>
 
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/Roberta-small.png" class="img-fluid" data-bs-toggle="modal"
+                {{!-- Roberta MacAdams - second woman elected to a Commonwealth Legislature --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/ivKODkwDYSo/sddefault.jpg" data-bs-toggle="modal"
                             data-bs-target="#Roberta"
-                            alt="Roberta MacAdams - second woman elected to a Commonwealth Legislature<">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Roberta" style="width: 350px;">
-                            <p>Roberta MacAdams - second woman elected to a Commonwealth Legislature</p>
-                        </button>
+                            alt="Roberta MacAdams - second woman elected to a Commonwealth Legislature">
+                        <div class="card-body">
+                            <h4>Roberta MacAdams - second woman elected to a Commonwealth Legislature</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Roberta">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -171,13 +206,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/ivKODkwDYSo?si=zRUDJTqU60wMUG7k"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/ivKODkwDYSo" title="Roberta" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -186,39 +218,39 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
 
-                    <div class="col">
-                        <img src="/img/Flu1918-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Flu1918" alt="The 1918 Flu Epidemic<">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Flu1918" style="width: 350px;">
-                            <p>The 1918 Flu Epidemic</p>
-                        </button>
+                {{!-- The 1918 Flu Epidemic --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/zJpA7aoluu4/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Flu" alt="The 1918 Flu Epidemic">
+                        <div class="card-body">
+                            <h4>The 1918 Flu Epidemic</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Flu">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Flu1918" tabindex="-1" aria-labelledby="Flu1918Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="Flu" tabindex="-1" aria-labelledby="FluLabel" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="Flu1918Label">The 1918 Flu Epidemic</h5>
+                                    <h5 class="modal-title" id="FluLabel">The 1918 Flu Epidemic</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/zJpA7aoluu4?si=ISs0NpCwVmsx4vDg"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/zJpA7aoluu4" title="Flu" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -227,42 +259,46 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1920's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/District-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#District" alt="District Nurse Travels to Tragedy">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#District" style="width: 350px;">
-                            <p>District Nurse Travels to Tragedy</p>
-                        </button>
+                {{!-- District Nurse Travels to Tragedy --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/MnZAdWzanMQ/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#DistrictNurse"
+                            alt="District Nurse Travels to Tragedy">
+                        <div class="card-body">
+                            <h4>District Nurse Travels to Tragedy</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#DistrictNurse">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="District" tabindex="-1" aria-labelledby="DistrictLabel"
+                    <div class="modal fade" id="DistrictNurse" tabindex="-1" aria-labelledby="DistrictNurseLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="DistrictLabel">District Nurse Travels to Tragedy</h5>
+                                    <h5 class="modal-title" id="DistrictNurseLabel">District Nurse Travels to Tragedy</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/MnZAdWzanMQ?si=vbzkUOrXtiq2GNLl"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/MnZAdWzanMQ" title="Roberta" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -273,17 +309,22 @@
                     </div>
                 </div>
 
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/Student-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Student" alt="Student Nurses Defiantly 'bob' Hair">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Student" style="width: 350px;">
-                            <p>Student Nurses Defiantly "bob" Hair</p>
-                        </button>
+                {{!-- Student Nurses Defiantly 'bob' Hair --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/-EmdokrDGKc/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Student"
+                            alt="Student Nurses Defiantly 'bob' Hair">
+                        <div class="card-body">
+                            <h4>Student Nurses Defiantly 'bob' Hair</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Student">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -292,18 +333,15 @@
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="StudentLabel">Student Nurses Defiantly "bob" Hair</h5>
+                                    <h5 class="modal-title" id="StudentLabel">Student Nurses Defiantly 'bob' Hairy</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/-EmdokrDGKc?si=Qj8BNsE5maHD4BzU"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/-EmdokrDGKc" title="Student" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -312,78 +350,39 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/Red-small.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#Red"
+                {{!-- Red Cross: nurses in a changing role --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/KWj4MJX5oGE/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#RedCross"
                             alt="Red Cross: nurses in a changing role">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Red" style="width: 350px;">
-                            <p>Red Cross: nurses in a changing role</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Red" tabindex="-1" aria-labelledby="RedLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="RedLabel">Red Cross: nurses in a changing role</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/KWj4MJX5oGE?si=-SzKM9z-Fh4oX6zk"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h4>Red Cross: nurses in a changing role</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#RedCross">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
                         </div>
                     </div>
 
-                </div>
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/NursesUniform-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#NurseUniform" alt="Nurses Uniforms: Bibs, Collars and Caps">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#NurseUniform" style="width: 350px;">
-                            <p>Nurses Uniforms: Bibs, Collars and Caps</p>
-                        </button>
-                    </div>
-
                     <!-- Modal -->
-                    <div class="modal fade" id="NurseUniform" tabindex="-1" aria-labelledby="NurseUniformLabel"
+                    <div class="modal fade" id="RedCross" tabindex="-1" aria-labelledby="RedCrossLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="NurseUniformLabel">Nurses Uniforms: Bibs, Collars and
-                                        Caps</h5>
+                                    <h5 class="modal-title" id="RedCrossLabel">Red Cross: nurses in a changing role</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/RzKikYjel6Q?si=_lgbIkD5WNeR4VDB"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/KWj4MJX5oGE" title="Red Cross" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
@@ -394,22 +393,72 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Public-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Public" alt="Public Health Nurses">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Public" style="width: 350px;">
-                            <p>Public Health Nurses</p>
-                        </button>
+                {{!-- Nurses Uniforms: Bibs, Collars and Caps --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/RzKikYjel6Q/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesUniforms"
+                            alt="Nurses Uniforms: Bibs, Collars and Caps">
+                        <div class="card-body">
+                            <h4>Nurses Uniforms: Bibs, Collars and Caps</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesUniforms">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Public" tabindex="-1" aria-labelledby="PublicLabel" aria-hidden="true">
+                    <div class="modal fade" id="NursesUniforms" tabindex="-1" aria-labelledby="NursesUniformsLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NursesUniformsLabel">Nurses Uniforms: Bibs, Collars and Caps</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/RzKikYjel6Q" title="Nurses Uniforms: Bibs, Collars and Caps" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Public Health Nurses --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/mM0LRQ3TUig/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Public"
+                            alt="Public Health Nurses">
+                        <div class="card-body">
+                            <h4>Public Health Nurses</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Public">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Public" tabindex="-1" aria-labelledby="PublicLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -418,13 +467,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/mM0LRQ3TUig?si=nmoxNs03LkceEyBh"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/mM0LRQ3TUig" title="Red Cross" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -433,19 +479,24 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
 
-                    <div class="col">
-                        <img src="/img/Changing-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Changing" alt="The Changing Practice of Nursing">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Changing" style="width: 350px;">
-                            <p>The Changing Practice of Nursing</p>
-                        </button>
+                {{!-- Public Health Nurses --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/k43TGdSU_5A/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Changing"
+                            alt="The Changing Practice of Nursing">
+                        <div class="card-body">
+                            <h4>The Changing Practice of Nursing</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Changing">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -459,13 +510,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/k43TGdSU_5A?si=JzdyhgBKRnWHct38"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/k43TGdSU_5A" title="Changing" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -475,41 +523,45 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1930's</h5>
-                <div class="col-md pb-3">
 
-                    <div class="col">
-                        <img src="/img/Nurses30s-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Nurses30s" alt=">Nurses help out in the “Dirty 30s”">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Nurses30s" style="width: 350px;">
-                            <p>Nurses help out in the “Dirty 30s”</p>
-                        </button>
+                 {{!-- District Nurse Travels to Tragedy --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/cgrl-x2T3V4/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesHelp"
+                            alt="Nurses help out in the “Dirty 30s”">
+                        <div class="card-body">
+                            <h4>Nurses help out in the “Dirty 30s”</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesHelp">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Nurses30s" tabindex="-1" aria-labelledby="Nurses30sLabel"
+                    <div class="modal fade" id="NursesHelp" tabindex="-1" aria-labelledby="NursesHelpLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="Nurses30sLabel">Nurses help out in the “Dirty 30s”</h5>
+                                    <h5 class="modal-title" id="NursesHelpLabel">Nurses help out in the “Dirty 30s”</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/cgrl-x2T3V4?si=oDQdxR2PXtmHofuM"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/cgrl-x2T3V4" title="NursesHelp" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -519,17 +571,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-3">
 
-                    <div class="col">
-                        <img src="/img/LongHours-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#LongHours" alt=">Student nurses work long hours">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#LongHours" style="width: 350px;">
-                            <p>Student nurses work long hours</p>
-                        </button>
+                {{!-- Student nurses work long hours --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/7oO7NhZeI1g/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#LongHours"
+                            alt="Student nurses work long hours">
+                        <div class="card-body">
+                            <h4>Student nurses work long hours</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#LongHours">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
@@ -543,13 +602,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/7oO7NhZeI1g?si=RYQu1MLNg_0NQTcG"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/7oO7NhZeI1g" title="NursesHelp" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -558,43 +614,46 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1940's</h5>
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/PrairieWWIILabel-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#PrairieWWII" alt=">Prairie nurses in World War II">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#PrairieWWII" style="width: 350px;">
-                            <p>Prairie nurses in World War II</p>
-                        </button>
+                
+                {{!-- Prairie nurses in World War II --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/d2jjnnv7cb0/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#WWII"
+                            alt="Prairie nurses in World War II">
+                        <div class="card-body">
+                            <h4>Prairie nurses in World War II</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#WWII">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="PrairieWWII" tabindex="-1" aria-labelledby="PrairieWWIILabel"
+                    <div class="modal fade" id="WWII" tabindex="-1" aria-labelledby="WWIILabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="PrairieWWIILabel">Prairie nurses in World War II</h5>
+                                    <h5 class="modal-title" id="WWIILabel">Prairie nurses in World War II</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/d2jjnnv7cb0?si=4NUYggycbE_M3lrA"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/d2jjnnv7cb0" title="NursesHelp" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -605,37 +664,39 @@
                     </div>
                 </div>
 
-                <div class="col-md pb-3">
-
-                    <div class="col">
-                        <img src="/img/Northern-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Northern" alt=">The Northern Nurse">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Northern" style="width: 350px;">
-                            <p>The Northern Nurse</p>
-                        </button>
+                {{!-- The Northern Nurse --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/7-7dEKST4Nk/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Northern"
+                            alt="The Northern Nurse">
+                        <div class="card-body">
+                            <h4>The Northern Nurse</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Northern">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Northern" tabindex="-1" aria-labelledby="NorthernLabel"
+                    <div class="modal fade" id="Northern" tabindex="-1" aria-labelledby="WWIILabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="NorthernLabel">The Northern Nurse</h5>
+                                    <h5 class="modal-title" id="WWIILabel">The Northern Nurse</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/7-7dEKST4Nk?si=h9pI6i_TP1R9c33v"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/7-7dEKST4Nk" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -644,40 +705,41 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
 
-
-                    <div class="col">
-                        <img src="/img/Tommy-small.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#Tommy"
-                            alt="Tommy Douglas TV announcement of first medicare plan">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Tommy" style="width: 350px;">
-                            <p>Tommy Douglas TV announcement of first medicare plan</p>
-                        </button>
+                {{!-- Tommy Douglas TV announcement of first medicare plan --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/SVc6Uqo0foU/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Tommy"
+                            alt="Saskatchewan Air Ambulance">
+                        <div class="card-body">
+                            <h4>Tommy Douglas TV announcement of first medicare plan</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Northern">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Tommy" tabindex="-1" aria-labelledby="TommyLabel" aria-hidden="true">
+                    <div class="modal fade" id="Tommy" tabindex="-1" aria-labelledby="Tommy"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="TommyLabel">Tommy Douglas TV announcement of first
-                                        medicare plan</h5>
+                                    <h5 class="modal-title" id="Tommy">Tommy Douglas TV announcement of first medicare plan</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/7-7dEKST4Nk?si=h9pI6i_TP1R9c33v"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/SVc6Uqo0foU" title="Saskatchewan Air Ambulance: from the fields and forest" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -686,41 +748,41 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/SaskatchewanAmbulance-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#SaskatchewanAmbulance"
-                            alt="Tuberculosis and the need for lengthy care in sanitoriums">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#SaskatchewanAmbulance" style="width: 350px;">
-                            <p>Saskatchewan Air Ambulance: from the fields and forest</p>
-                        </button>
+                {{!-- Saskatchewan Air Ambulance: from the fields and forest --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/vzfahnj9GTQ/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#SasAir"
+                            alt="SasAir">
+                        <div class="card-body">
+                            <h4>Saskatchewan Air Ambulance: from the fields and forest</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#SasAir">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="SaskatchewanAmbulance" tabindex="-1"
-                        aria-labelledby="SaskatchewanAmbulanceLabel" aria-hidden="true">
+                    <div class="modal fade" id="SasAir" tabindex="-1" aria-labelledby="SasAir"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="SaskatchewanAmbulanceLabel">Saskatchewan Air Ambulance:
-                                        from the fields and forest</h5>
+                                    <h5 class="modal-title" id="SasAir">Saskatchewan Air Ambulance: from the fields and forest</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/vzfahnj9GTQ?si=0yZqvzYJ1KazK7aT"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/vzfahnj9GTQ" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -729,40 +791,41 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Tuberculosis-small.png" class="img-fluid" data-bs-toggle="modal"
+
+                {{!-- Tuberculosis and the need for lengthy care in sanitoriums --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/KOLegBG-sVg/sddefault.jpg" data-bs-toggle="modal"
                             data-bs-target="#Tuberculosis"
-                            alt="Tuberculosis and the need for lengthy care in sanitoriums">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Tuberculosis" style="width: 350px;">
-                            <p>Tuberculosis and the need for lengthy care in sanitoriums</p>
-                        </button>
+                            alt="Tuberculosis">
+                        <div class="card-body">
+                            <h4>Tuberculosis and the need for lengthy care in sanitoriums</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Tuberculosis">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Tuberculosis" tabindex="-1" aria-labelledby="TuberculosisLabel"
+                    <div class="modal fade" id="Tuberculosis" tabindex="-1" aria-labelledby="Tuberculosis"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="TuberculosisLabel">Tuberculosis and the need for lengthy
-                                        care in sanitoriums</h5>
+                                    <h5 class="modal-title" id="SasAir">Tuberculosis and the need for lengthy care in sanitoriums</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/KOLegBG-sVg?si=PuG20Hc4OVy5wXDi"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/KOLegBG-sVg" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -774,37 +837,42 @@
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1950's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/DistrictNurse-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#DistrictNurse" alt="A District Nurse's Story">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#DistrictNurse" style="width: 350px;">
-                            <p>A District Nurse's Story</p>
-                        </button>
+                {{!-- A District Nurse's Story --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/fg4PZIlbnio/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NurseStory"
+                            alt="NurseStory">
+                        <div class="card-body">
+                            <h4>A District Nurse's Story</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NurseStory">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="DistrictNurse" tabindex="-1" aria-labelledby="DistrictNurseLabel"
+                    <div class="modal fade" id="NurseStory" tabindex="-1" aria-labelledby="NurseStory"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="DistrictNurseLabel">A District Nurse's Story</h5>
+                                    <h5 class="modal-title" id="NurseStory">A District Nurse's Story</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/fg4PZIlbnio?si=gBg5Kya3XzS3eIIp"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/fg4PZIlbnio" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -814,36 +882,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Contributions-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Contributions" alt="Contributions of Immigrant Nurses">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Contributions" style="width: 350px;">
-                            <p>Contributions of Immigrant Nurses</p>
-                        </button>
+                {{!-- Contributions of Immigrant Nurses --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/mKngM-XzR8k/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Immigrant"
+                            alt="Contributions of Immigrant Nurses">
+                        <div class="card-body">
+                            <h4>Contributions of Immigrant Nurses</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Immigrant">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Contributions" tabindex="-1" aria-labelledby="ContributionsLabel"
+                    <div class="modal fade" id="Immigrant" tabindex="-1" aria-labelledby="Immigrant"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="ContributionsLabel">Contributions of Immigrant Nurses
-                                    </h5>
+                                    <h5 class="modal-title" id="NurseStory">Contributions of Immigrant Nurses</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/mKngM-XzR8k?si=CfmAgwfYUlMIohDI"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/mKngM-XzR8k" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -852,34 +924,39 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Life-small.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#Life"
+
+                {{!-- Life in residence: early nursing schools --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/__xbjvJYyyM/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Life"
                             alt="Life in residence: early nursing schools">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Life" style="width: 350px;">
-                            <p>Life in residence: early nursing schools</p>
-                        </button>
+                        <div class="card-body">
+                            <h4>Life in residence: early nursing schools</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Life">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Life" tabindex="-1" aria-labelledby="LifeLabel" aria-hidden="true">
+                    <div class="modal fade" id="Life" tabindex="-1" aria-labelledby="Life"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="LifeLabel">Life in residence: early nursing schools
-                                    </h5>
+                                    <h5 class="modal-title" id="Life">Life in residence: early nursing schools</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/__xbjvJYyyM?si=mR9k8DcLTOcQNaPq"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/__xbjvJYyyM" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
@@ -890,115 +967,127 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Polio-small.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#Polio"
+            
+                {{!-- The Dreaded Polio and the Iron Lung --}}            
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/gUFhTmrkAx4/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#IronLung"
                             alt="The Dreaded Polio and the Iron Lung">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Polio" style="width: 350px;">
-                            <p>The Dreaded Polio and the Iron Lung</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Polio" tabindex="-1" aria-labelledby="PolioLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="PolioLabel">The Dreaded Polio and the Iron Lung
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/gUFhTmrkAx4?si=nzFha7xfgLbnxOjA"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h4>The Dreaded Polio and the Iron Lung</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#IronLung">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
                         </div>
                     </div>
 
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Psyche-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Psych" alt="The Specialness of Psychiatric Nursing">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Psych" style="width: 350px;">
-                            <p>The Specialness of Psychiatric Nursing</p>
-                        </button>
-                    </div>
-
                     <!-- Modal -->
-                    <div class="modal fade" id="Psych" tabindex="-1" aria-labelledby="PsychLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="PolioLabel">The Specialness of Psychiatric Nursing
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/_0H2xyiPMbY?si=mNwmdPzGUctWTW0m"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/BecameNurses-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#BecameNurses" alt="Why we Became Nurses">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#BecameNurses" style="width: 350px;">
-                            <p>Why we Became Nurses</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="BecameNurses" tabindex="-1" aria-labelledby="BecameNursesLabel"
+                    <div class="modal fade" id="IronLung" tabindex="-1" aria-labelledby="IronLung"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="BecameNursesLabel">Why we Became Nurses
-                                    </h5>
+                                    <h5 class="modal-title" id="IronLung">The Dreaded Polio and the Iron Lung</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/iZzUFEe9WD4?si=iLLrmEdMqsomT6XX"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/gUFhTmrkAx4" title="The Northern Nurse" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                {{!-- The Specialness of Psychiatric Nursing --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/_0H2xyiPMbY/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#PsychiatricNursing"
+                            alt="The Specialness of Psychiatric Nursing">
+                        <div class="card-body">
+                            <h4>The Specialness of Psychiatric Nursing</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#PsychiatricNursing">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="PsychiatricNursing" tabindex="-1" aria-labelledby="PsychiatricNursing"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="PsychiatricNursing">The Specialness of Psychiatric Nursing</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/_0H2xyiPMbY" title="The Northern Nurse" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Why we Became Nurses --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/iZzUFEe9WD4/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#BecameNurses"
+                            alt="Why we Became Nurses">
+                        <div class="card-body">
+                            <h4>Why we Became Nurses</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#BecameNurses">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="BecameNurses" tabindex="-1" aria-labelledby="BecameNurses"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="BecameNurses">Why we Became Nurses</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/iZzUFEe9WD4" title="The Northern Nurse" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1010,175 +1099,175 @@
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+            <div class="row text-center justify-content-center pt-5">
+                <h5 class="text-success">1960's</h5>
+
+                {{!-- Nursing in a Small Hospital --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/URb78hPKGfk/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#SmallHospital"
+                            alt="SmallHospital">
+                        <div class="card-body">
+                            <h4>Nursing in a Small Hospital</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#SmallHospital">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="SmallHospital" tabindex="-1" aria-labelledby="SmallHospital"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="SmallHospital">Nursing in a Small Hospital</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/URb78hPKGfk" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Insecurity: Paying for Care Before Medicare --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/Y9PtcXv6eac/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Insecurity"
+                            alt="Insecurity">
+                        <div class="card-body">
+                            <h4>Insecurity: Paying for Care Before Medicare</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Insecurity">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Insecurity" tabindex="-1" aria-labelledby="Insecurity"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Insecurity">Insecurity: Paying for Care Before Medicare</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/Y9PtcXv6eac" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Changing Level of Nursing Responsibilities --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/9d4ASI3CXhs/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursingResponsibilities"
+                            alt="NursingResponsibilities">
+                        <div class="card-body">
+                            <h4>Changing Level of Nursing Responsibilities</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursingResponsibilities">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="NursingResponsibilities" tabindex="-1" aria-labelledby="NursingResponsibilities"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NursingResponsibilities">Changing Level of Nursing Responsibilities</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/9d4ASI3CXhs" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1970's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Founding-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Founding" alt="The 1977 nurses' strike in Alberta">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Founding" style="width: 350px;">
-                            <p>Founding a union for nurses: the United Nurses of Alberta</p>
-                        </button>
+                
+                {{!-- Founding a union for nurses: the United Nurses of Alberta --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/dcpBi963Drw/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#FoundingUnion"
+                            alt="FoundingUnion">
+                        <div class="card-body">
+                            <h4>Founding a union for nurses: the United Nurses of Alberta</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#FoundingUnion">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Founding" tabindex="-1" aria-labelledby="FoundingLabel"
+                    <div class="modal fade" id="FoundingUnion" tabindex="-1" aria-labelledby="FoundingUnion"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="PolioLabel">Founding a union for nurses: the United
-                                        Nurses of Alberta
-                                    </h5>
+                                    <h5 class="modal-title" id="FoundingUnion">Founding a union for nurses: the United Nurses of Alberta</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660"
-                                        src="https://www.youtube.com/embed/dcpBi963Drw?si=ecg6heNwICVFcTB5"
-                                        title="YouTube video player" frameborder="0"
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/dcpBi963Drw" title="Nursing in a Small Hospital" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Strike-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Strike" alt="The 1977 nurses' strike in Alberta">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Strike" style="width: 350px;">
-                            <p>The 1977 nurses' strike in Alberta</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Strike" tabindex="-1" aria-labelledby="StrikeLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="PolioLabel">The 1977 nurses' strike in Alberta</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/92R1lE-mRik?si=dwINSWanIviFpk6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Staff-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Staff" alt="The Staff Nurses' Association of Alberta">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Staff" style="width: 350px;">
-                            <p>The Staff Nurses' Association of Alberta</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Staff" tabindex="-1" aria-labelledby="StaffLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="StaffLabel">The Staff Nurses' Association of Alberta</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/3AqTrBiPgEs?si=D7usRuQFuKFdrkQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Advocate-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Advocate" alt="Advocating for Patients">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Advocate" style="width: 350px;">
-                            <p>Advocating for Patients</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Advocate" tabindex="-1" aria-labelledby="AdvocateLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="AdvocateLabel">Advocating for Patients</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/gCx7lOOiBNY?si=o-pxYGzKE9XXjukJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Formation-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Formation" alt="Formation of the Saskatchewan Union of Nurses">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Formation" style="width: 350px;">
-                            <p>Formation of the Saskatchewan Union of Nurses</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Formation" tabindex="-1" aria-labelledby="FormationLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="FormationLabel">Formation of the Saskatchewan Union of Nurses</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/CkEOfKeReqc?si=leTWnIc57dyGSGTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1188,30 +1277,216 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Oath-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Oath" alt="The Nurses' oath">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Oath" style="width: 350px;">
-                            <p>The Nurses' oath</p>
-                        </button>
+                {{!-- The 1977 nurses' strike in Alberta --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/92R1lE-mRik/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NurseStrike"
+                            alt="NurseStrike">
+                        <div class="card-body">
+                            <h4>The 1977 nurses' strike in Alberta</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NurseStrike">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg></a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Oath" tabindex="-1" aria-labelledby="OathLabel"
+                    <div class="modal fade" id="NurseStrike" tabindex="-1" aria-labelledby="NurseStrike"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="OathLabel">The Nurses' oath</h5>
+                                    <h5 class="modal-title" id="NurseStrike">The 1977 nurses' strike in Alberta</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/jJcqQTo-0do?si=cIfl0sEb7tk-ayVV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/92R1lE-mRik" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- The Staff Nurses' Association of Alberta --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/3AqTrBiPgEs/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NurseStrike"
+                            alt="NurseStrike">
+                        <div class="card-body">
+                            <h4>The Staff Nurses' Association of Alberta</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NurseStrike">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="NurseStrike" tabindex="-1" aria-labelledby="NurseStrike"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NurseStrike">The Staff Nurses' Association of Alberta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/3AqTrBiPgEs" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Advocating for Patients --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/gCx7lOOiBNY/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Advocating"
+                            alt="Advocating">
+                        <div class="card-body">
+                            <h4>Advocating for Patients</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Advocating">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Advocating" tabindex="-1" aria-labelledby="Advocating"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Advocating">Advocating for Patients</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/gCx7lOOiBNY" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- Formation of the Saskatchewan Union of Nurses --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/CkEOfKeReqc/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Formation"
+                            alt="Formation">
+                        <div class="card-body">
+                            <h4>Formation of the Saskatchewan Union of Nurses</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Formation">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Formation" tabindex="-1" aria-labelledby="Formation"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="Formation">Formation of the Saskatchewan Union of Nurses</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/CkEOfKeReqc" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{!-- The Nurses' Oath --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/jJcqQTo-0do/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesOath"
+                            alt="NursesOath">
+                        <div class="card-body">
+                            <h4>The Nurses' Oath</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesOath">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="NursesOath" tabindex="-1" aria-labelledby="NursesOath"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="NursesOath">The Nurses' Oath</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/jJcqQTo-0do" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1223,32 +1498,44 @@
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1980's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/1980Strike-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#1980Strike" alt="The 1980 &amp; 1982 nurses' strikes in Alberta">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#1980Strike" style="width: 350px;">
-                            <p>The 1980 &amp; 1982 nurses' strikes in Alberta</p>
-                        </button>
+                {{!-- The 1980 & 1982 nurses' strikes in Alberta --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/xlW6iPYT9rI/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#StrikesInAlberta"
+                            alt="StrikesInAlberta">
+                        <div class="card-body">
+                            <h4>The 1980 &amp; 1982 nurses' strikes in Alberta</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#StrikesInAlberta">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="1980Strike" tabindex="-1" aria-labelledby="1980StrikeLabel"
+                    <div class="modal fade" id="StrikesInAlberta" tabindex="-1" aria-labelledby="StrikesInAlberta"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="1980StrikeLabel">The 1980 &amp; 1982 nurses' strikes in Alberta</h5>
+                                    <h5 class="modal-title" id="StrikesInAlberta">The 1980 &amp; 1982 nurses' strikes in Alberta</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/xlW6iPYT9rI?si=qQsRpnCPQYi8SrDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/xlW6iPYT9rI" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1257,32 +1544,42 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/1980Strike-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#1980Strike" alt="Nurses defy with illegal strike in 1988">
+                </div>            
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#1980Strike" style="width: 350px;">
-                            <p>Nurses defy with illegal strike in 1988</p>
-                        </button>
+                {{!-- Nurses defy with illegal strike in 1988 --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/Pb7aJBSJGG4/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesDefy"
+                            alt="NursesDefy">
+                        <div class="card-body">
+                            <h4> Nurses defy with illegal strike in 1988</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesDefy">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="1980Strike" tabindex="-1" aria-labelledby="1980StrikeLabel"
+                    <div class="modal fade" id="NursesDefy" tabindex="-1" aria-labelledby="NursesDefy"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="1980StrikeLabel">Nurses defy with illegal strike in 1988</h5>
+                                    <h5 class="modal-title" id="NursesDefy"> Nurses defy with illegal strike in 1988</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/xlW6iPYT9rI?si=qQsRpnCPQYi8SrDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/Pb7aJBSJGG4" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1291,69 +1588,47 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/1980Strike-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Protect" alt="Nurses Strike to Protect their Patients' care">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Protect" style="width: 350px;">
-                            <p>Nurses Strike to Protect their Patients' care</p>
-                        </button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="Protect" tabindex="-1" aria-labelledby="ProtectLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="ProtectLabel">Nurses Strike to Protect their Patients' care</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/xlW6iPYT9rI?si=qQsRpnCPQYi8SrDV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                </div>            
             </div>
 
-            <div class="row text-center justify-content-center">
+
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">1990's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Alberta-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Alberta" alt="Alberta makes dramatic health cuts in the 1990s">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Alberta" style="width: 350px;">
-                            <p>Alberta makes dramatic health cuts in the 1990s</p>
-                        </button>
+                {{!-- Alberta makes dramatic health cuts in the 1990s --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/xEqJofsnUgQ/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#AlbertaHealthCuts"
+                            alt="AlbertaHealthCuts">
+                        <div class="card-body">
+                            <h4>Alberta makes dramatic health cuts in the 1990s</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#AlbertaHealthCuts">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Alberta" tabindex="-1" aria-labelledby="AlbertaLabel"
+                    <div class="modal fade" id="AlbertaHealthCuts" tabindex="-1" aria-labelledby="AlbertaHealthCuts"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="AlbertaLabel">Alberta makes dramatic health cuts in the 1990s</h5>
+                                    <h5 class="modal-title" id="AlbertaHealthCuts">Alberta makes dramatic health cuts in the 1990s</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/xEqJofsnUgQ?si=totmU61dwzsWOsNu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/xEqJofsnUgQ" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1362,32 +1637,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Impact-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Impact" alt="Nurses impacted dramatically by cuts">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Impact" style="width: 350px;">
-                            <p>Nurses impacted dramatically by cuts</p>
-                        </button>
+                {{!-- Nurses impacted dramatically by cuts --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/qgiTtOvHCm0/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesImpacted"
+                            alt="NursesImpacted">
+                        <div class="card-body">
+                            <h4>Nurses impacted dramatically by cuts</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesImpacted">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Impact" tabindex="-1" aria-labelledby="ImpactLabel"
+                    <div class="modal fade" id="NursesImpacted" tabindex="-1" aria-labelledby="NursesImpacted"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="ImpactLabel">Nurses impacted dramatically by cuts</h5>
+                                    <h5 class="modal-title" id="NursesImpacted">Nurses impacted dramatically by cuts</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/qgiTtOvHCm0?si=YQea7i660jXV8cMS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/qgiTtOvHCm0" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1396,33 +1681,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Fun-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Fun" alt="Fun on the floor: nurses break the tension">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Fun" style="width: 350px;">
-                            <p>Fun on the floor: nurses break the tension</p>
-                        </button>
+                {{!-- Fun on the floor: nurses break the tension --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/uE0jpivR_PQ/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#FunOnTheFloor"
+                            alt="FunOnTheFloor">
+                        <div class="card-body">
+                            <h4>Fun on the floor: nurses break the tension</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#FunOnTheFloor">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Fun" tabindex="-1" aria-labelledby="FunLabel"
+                    <div class="modal fade" id="FunOnTheFloor" tabindex="-1" aria-labelledby="FunOnTheFloor"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="FunLabel">Fun on the floor: nurses break the tension</h5>
+                                    <h5 class="modal-title" id="FunOnTheFloor">Fun on the floor: nurses break the tension</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/uE0jpivR_PQ?si=ytwqtW60YMBsJOUd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/uE0jpivR_PQ" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1431,33 +1725,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Fun-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Sas" alt="Saskatchewan nurses strike in 1999">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Sas" style="width: 350px;">
-                            <p>Saskatchewan nurses strike in 1999</p>
-                        </button>
+                {{!-- Saskatchewan nurses strike in 1999 --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/7lCW6hmiztA/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#SaskatchewanStrike"
+                            alt="SaskatchewanStrike">
+                        <div class="card-body">
+                            <h4>Saskatchewan nurses strike in 1999</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#SaskatchewanStrike">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Sas" tabindex="-1" aria-labelledby="SasLabel"
+                    <div class="modal fade" id="SaskatchewanStrike" tabindex="-1" aria-labelledby="SaskatchewanStrike"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="FunLabel">Saskatchewan nurses strike in 1999</h5>
+                                    <h5 class="modal-title" id="SaskatchewanStrike">Saskatchewan nurses strike in 1999</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/7lCW6hmiztA?si=iNHBRUImMvIBklcP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/7lCW6hmiztA" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1466,33 +1769,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Dramatize-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Dramatize" alt="Nurses Dramatize crisis with 'shoe-in'">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Dramatize" style="width: 350px;">
-                            <p>Nurses Dramatize crisis with "shoe-in"</p>
-                        </button>
+                {{!-- Nurses Dramatize crisis with "shoe-in" --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/If2J2br4m00/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#ShoeIn"
+                            alt="ShoeIn">
+                        <div class="card-body">
+                            <h4>Nurses Dramatize crisis with "shoe-in"</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#ShoeIn">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Dramatize" tabindex="-1" aria-labelledby="DramatizeLabel"
+                    <div class="modal fade" id="ShoeIn" tabindex="-1" aria-labelledby="ShoeIn"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="FunLabel">Nurses Dramatize crisis with "shoe-in"</h5>
+                                    <h5 class="modal-title" id="ShoeIn">Nurses Dramatize crisis with "shoe-in"</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/If2J2br4m00?si=BEAPAW4T0_Pep3n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/If2J2br4m00" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1501,36 +1813,47 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <div class="row text-center justify-content-center mt-5">
+
+            <div class="row text-center justify-content-center pt-5">
                 <h5 class="text-success">2000's</h5>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Caring-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Caring" alt="Caring for the Disabled and Elderly">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Caring" style="width: 350px;">
-                            <p>Caring for the Disabled and Elderly</p>
-                        </button>
+                {{!-- Caring for the Disabled and Elderly --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/0quRXO8qORk/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#CaringElderly"
+                            alt="CaringElderly">
+                        <div class="card-body">
+                            <h4>Caring for the Disabled and Elderly</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#CaringElderly">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Caring" tabindex="-1" aria-labelledby="CaringLabel"
+                    <div class="modal fade" id="CaringElderly" tabindex="-1" aria-labelledby="CaringElderly"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">Caring for the Disabled and Elderly</h5>
+                                    <h5 class="modal-title" id="CaringElderly">Caring for the Disabled and Elderly</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/0quRXO8qORk?si=-knBz0u9HvWLL76f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/0quRXO8qORk" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1540,30 +1863,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Garment-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Garment" alt="Nurses in the workplace at the Great Western Garment Company">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Garment" style="width: 350px;">
-                            <p>Nurses in the workplace at the Great Western Garment Company</p>
-                        </button>
+                {{!-- Nurses in the workplace at the Great Western Garment Company --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/eJs4d7m-myk/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#NursesInWorkplace"
+                            alt="NursesInWorkplace">
+                        <div class="card-body">
+                            <h4>Nurses in the workplace at the Great Western Garment Company</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#NursesInWorkplace">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Garment" tabindex="-1" aria-labelledby="GarmentLabel"
+                    <div class="modal fade" id="NursesInWorkplace" tabindex="-1" aria-labelledby="NursesInWorkplace"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">Nurses in the workplace at the Great Western Garment Company</h5>
+                                    <h5 class="modal-title" id="NursesInWorkplace">Nurses in the workplace at the Great Western Garment Company</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/eJs4d7m-myk?si=R3A65t7nnEMy5tYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/eJs4d7m-myk" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1572,32 +1906,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Garment-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Garment" alt="Never Enough Time">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Garment" style="width: 350px;">
-                            <p>Never Enough Time</p>
-                        </button>
+                {{!-- Never Enough Time --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/HGBgHogVL8o/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#Never"
+                            alt="Never">
+                        <div class="card-body">
+                            <h4>Never Enough Time</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#Never">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Garment" tabindex="-1" aria-labelledby="GarmentLabel"
+                    <div class="modal fade" id="Never" tabindex="-1" aria-labelledby="Never"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">Never Enough Time</h5>
+                                    <h5 class="modal-title" id="Never">Never Enough Time</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/eJs4d7m-myk?si=R3A65t7nnEMy5tYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/HGBgHogVL8o" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1606,32 +1950,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/Protecting-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#Protecting" alt="Protecting Caregivers: Health and Safety">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#Protecting" style="width: 350px;">
-                            <p>Protecting Caregivers: Health and Safety</p>
-                        </button>
+                {{!-- Protecting Caregivers: Health and Safety --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/9a4PN69-aAM/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#ProtectingCaregivers"
+                            alt="ProtectingCaregivers">
+                        <div class="card-body">
+                            <h4>Protecting Caregivers: Health and Safety</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#ProtectingCaregivers">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="Protecting" tabindex="-1" aria-labelledby="ProtectingLabel"
+                    <div class="modal fade" id="ProtectingCaregivers" tabindex="-1" aria-labelledby="ProtectingCaregivers"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">Protecting Caregivers: Health and Safety</h5>
+                                    <h5 class="modal-title" id="ProtectingCaregivers">Protecting Caregivers: Health and Safety</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/HGBgHogVL8o?si=ptyAhqofUXg67_ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/9a4PN69-aAM" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1640,32 +1994,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/FirstNation-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#FirstNation" alt="First Nations Nursing">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#FirstNation" style="width: 350px;">
-                            <p>First Nations Nursing</p>
-                        </button>
+            
+                {{!-- First Nations Nursing --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/AZn6bLjdi0w/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#FirstNation"
+                            alt="FirstNation">
+                        <div class="card-body">
+                            <h4>First Nations Nursing</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#FirstNation">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="FirstNation" tabindex="-1" aria-labelledby="FirstNationLabel"
+                    <div class="modal fade" id="FirstNation" tabindex="-1" aria-labelledby="FirstNation"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">First Nations Nursing</h5>
+                                    <h5 class="modal-title" id="FirstNation">First Nations Nursing</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/AZn6bLjdi0w?si=GsG3SoP5I2gMrAXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/AZn6bLjdi0w" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1674,32 +2038,42 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md pb-3">
-                    <div class="col">
-                        <img src="/img/SasAirAmbulance-small.png" class="img-fluid" data-bs-toggle="modal"
-                            data-bs-target="#SasAirAmbulance" alt="Saskatchewan Air Ambulance today">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="mt-3 btn bg-success text-light" data-bs-toggle="modal"
-                            data-bs-target="#SasAirAmbulance" style="width: 350px;">
-                            <p>Saskatchewan Air Ambulance today</p>
-                        </button>
+                {{!-- Saskatchewan Air Ambulance today --}}
+                <div class="col-md-auto video-card pt-4">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/QQBXcbNdgzA/sddefault.jpg" data-bs-toggle="modal"
+                            data-bs-target="#SaskatchewanAirAmbulance"
+                            alt="SaskatchewanAirAmbulance">
+                        <div class="card-body">
+                            <h4>Saskatchewan Air Ambulance today</h4>
+                            <a href="#" class="btn btn-success text-light" data-bs-toggle="modal"
+                                data-bs-target="#SaskatchewanAirAmbulance">Watch Video <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="SasAirAmbulance" tabindex="-1" aria-labelledby="SasAirAmbulanceLabel"
+                    <div class="modal fade" id="SaskatchewanAirAmbulance" tabindex="-1" aria-labelledby="SaskatchewanAirAmbulance"
                         aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="CaringLabel">Saskatchewan Air Ambulance today</h5>
+                                    <h5 class="modal-title" id="SaskatchewanAirAmbulance">Saskatchewan Air Ambulance today</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe width="860" height="660" src="https://www.youtube.com/embed/QQBXcbNdgzA?si=ainsOwg1GEpeNvmf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="100%" height="100%" loading="lazy"
+                                        src="https://www.youtube.com/embed/QQBXcbNdgzA" title="Nursing in a Small Hospital" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -1708,10 +2082,11 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
+
+
+
         </div>
     </div>
 

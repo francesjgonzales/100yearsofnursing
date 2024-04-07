@@ -68,3 +68,13 @@ Update branch in local env - `git pull`
 ## Image upload
 
 (https://www.geeksforgeeks.org/upload-and-retrieve-image-on-mongodb-using-mongoose/)
+
+## Youtube
+
+- Copy thumbnail - `https://img.youtube.com/vi/<video-endpoint>/<sddefault>.jpg`
+  Available sizes
+  --default (120x90)
+  --mqdefault (320x180)
+  --hqdefault (480x360)
+  --sddefault (640x480)
+  --maxresdefault (1280x720)

@@ -156,3 +156,13 @@ hr.rounded {
   width: 130vw;
   cursor: pointer;
 }
+
+.timeline-card,
+.video-card {
+  width: 20rem;
+}
+
+.video-img {
+  position: relative;
+  width: 100%;
+}

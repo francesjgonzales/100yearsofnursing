@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "reload": "^3.2.1"
+    "reload": "^3.3.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
